@@ -193,12 +193,17 @@ Las etiquetas actuales son de muestra; las instrucciones para editarlas están a
 
 ### Fase 0. Descarga e inventario
 - `descargar.py` recorre:
-  - Las páginas de edición de la barra lateral.
-  - Las noticias de la portada (2024 en adelante).
-  - Los nodos de problema y las listas de taxonomía de la web antigua.
-- Descarga todos los ficheros enlazados y descomprime los ZIP.
-- Escribe `inventario.csv` con estas columnas: `id, url, ruta_local, tipo, edicion, fase, numero, titulo, contenido (enunciado|solucion|ambos|otro), estado`.
-- Es idempotente: no descarga de nuevo lo que ya existe.
+  - Las páginas de edición de la barra lateral y las noticias de la portada (2024 en adelante).
+  - El nodo gemelo de cada página en la web antigua (mismo número de nodo), que a menudo tiene más contenido.
+  - Los nodos enlazados de la web antigua, hasta dos niveles.
+- De cada nodo de problema antiguo recoge fase, número, título, figuras, y el bloque y la dificultad que le asignó Thales.
+- Descarga los ficheros enlazados (PDF, PPS, PPSX, PPT, DOC, ZIP, GGB…) y descomprime los ZIP.
+- Las presentaciones de SlideShare (2011–2013), enlazadas o incrustadas, se descargan diapositiva a diapositiva como JPG de 2048 px.
+- Genera tres ficheros:
+  - `fuentes/ediciones.csv`: una fila por edición.
+  - `fuentes/inventario.csv`: una fila por material, con las columnas `id, edicion, fase, numero, titulo, tipo, contenido, estado, url, ruta_local, origen, bloques_thales, dificultad_thales, bytes, notas`.
+  - `fuentes/informe.md`: cobertura por edición, observaciones, errores y enlaces externos.
+- Es idempotente: no descarga de nuevo lo que ya existe y conserva los identificadores `F0001…` entre ejecuciones. Con `--refrescar` lo vuelve a pedir todo.
 - **Entregable:** `inventario.csv` completo y un informe de huecos (ediciones o problemas sin material localizado).
 
 ### Fase 1. Extracción
