@@ -142,8 +142,8 @@ edicion: 2016-XXXII
 fase: provincial            # provincial | regional
 numero: 1
 titulo: El robot
-bloques: [Lógica]           # de taxonomia.yaml (uno o varios)
-etiquetas: []               # taxonomía fina, de taxonomia.yaml
+bloques: [logica]           # identificadores de taxonomia.yaml (uno o varios)
+etiquetas: [deduccion]      # taxonomía fina, identificadores de taxonomia.yaml
 dificultad: medio           # facil | medio | dificil
 origen_clasificacion: propuesta   # thales | propuesta | revisada
 tiene_solucion: true
@@ -165,18 +165,27 @@ Texto en Markdown, con fórmulas en LaTeX ($a^2+b^2=c^2$) y figuras:
 
 ### 4.4. `taxonomia.yaml`
 
+Cada valor tiene un **identificador** (el que se escribe en `problema.md`) y un **nombre visible** (el que muestra la web). Las etiquetas finas se agrupan bajo su bloque para ordenar los filtros, pero su identificador es único en todo el fichero.
+
 ```yaml
-bloques:          # los de la web antigua de Thales
-  - Números/medidas
-  - Geometría
-  - Funciones/gráficas
-  - Lógica
-  - Estadística/Azar
-dificultades: [facil, medio, dificil]
-etiquetas: {}     # taxonomía fina: pendiente de definir, agrupada por bloque
+bloques:                      # los cinco de la web antigua de Thales
+  geometria:
+    nombre: Geometría
+    etiquetas:
+      areas: Áreas y perímetros
+      pitagoras: Teorema de Pitágoras
+  logica:
+    nombre: Lógica
+    etiquetas:
+      deduccion: Deducción a partir de pistas
+  # … numeros, funciones, estadistica
+dificultades:
+  facil: Fácil
+  medio: Medio
+  dificil: Difícil
 ```
 
-`validar.py` rechaza cualquier bloque, etiqueta o dificultad que no figure aquí. Así la clasificación se mantiene consistente.
+Las etiquetas actuales son de muestra; las instrucciones para editarlas están al principio del propio fichero. `validar.py` rechaza cualquier bloque, etiqueta o dificultad que no figure aquí. Así la clasificación se mantiene consistente.
 
 ---
 

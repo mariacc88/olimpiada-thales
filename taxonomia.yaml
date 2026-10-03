@@ -1,0 +1,72 @@
+# Taxonomía del banco de problemas
+#
+# Aquí se definen los valores permitidos para clasificar los problemas.
+# scripts/validar.py rechaza cualquier valor de un problema.md que no esté aquí.
+#
+# En problema.md se usan los IDENTIFICADORES (la clave a la izquierda de ":"),
+# no los nombres. Ejemplo:
+#
+#   bloques: [geometria]
+#   etiquetas: [areas, pitagoras]
+#   dificultad: medio
+#
+# Para añadir una etiqueta: escribe una línea nueva  "identificador: Nombre visible"
+# dentro del bloque que corresponda. Reglas para el identificador:
+#   - minúsculas, sin tildes ni espacios (usa guiones: "numeros-primos")
+#   - único en todo el fichero, aunque esté en otro bloque
+# Una etiqueta se agrupa bajo un bloque solo para ordenar el menú de filtros;
+# un problema puede llevar etiquetas de cualquier bloque.
+#
+# Para renombrar algo visible, cambia solo el nombre (a la derecha de ":").
+# Cambiar un identificador obliga a cambiarlo también en los problemas que lo usen.
+
+# ---------------------------------------------------------------------------
+# Bloques temáticos: los cinco que usa la web antigua de Thales.
+# ---------------------------------------------------------------------------
+bloques:
+  numeros:
+    nombre: Números y medidas
+    etiquetas:
+      divisibilidad: Divisibilidad (múltiplos, divisores, mcm, mcd)
+      numeros-primos: Números primos
+      fracciones: Fracciones y porcentajes
+      proporcionalidad: Proporcionalidad y repartos
+      cifras: Cifras y sistemas de numeración
+      ecuaciones: Planteamiento de ecuaciones
+
+  geometria:
+    nombre: Geometría
+    etiquetas:
+      areas: Áreas y perímetros
+      pitagoras: Teorema de Pitágoras
+      angulos: Ángulos
+      cuerpos: Cuerpos geométricos y volúmenes
+      teselaciones: Mosaicos y teselaciones
+
+  funciones:
+    nombre: Funciones y gráficas
+    etiquetas:
+      graficas: Lectura e interpretación de gráficas
+      movimiento: Problemas de móviles
+
+  logica:
+    nombre: Lógica
+    etiquetas:
+      deduccion: Deducción a partir de pistas
+      juegos: Juegos y estrategias
+      patrones: Patrones y regularidades
+
+  estadistica:
+    nombre: Estadística y azar
+    etiquetas:
+      combinatoria: Combinatoria y recuento
+      probabilidad: Probabilidad
+      estadistica-descriptiva: Medias y tablas de datos
+
+# ---------------------------------------------------------------------------
+# Dificultad: la escala de la web antigua de Thales, relativa a la olimpiada.
+# ---------------------------------------------------------------------------
+dificultades:
+  facil: Fácil
+  medio: Medio
+  dificil: Difícil
