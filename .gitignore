@@ -1,0 +1,16 @@
+# Copia local de las fuentes descargadas (pesadas; no se versionan)
+fuentes/raw/
+
+# Intermedios de extracción y salida de la construcción
+trabajo/
+web/datos/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
