@@ -47,8 +47,9 @@ TERMINOS_DIFICULTAD = {42: "facil", 43: "medio", 44: "dificil"}
 # Lo que se ha comprobado a mano al revisar el informe; se copia tal cual en informe.md
 OBSERVACIONES = {
     "1985-I": "en la web, «¿Equivalencia geométrica?» figura como Regional 3; por el orden es el Regional 4.",
-    "1985–1989": "algunas figuras enlazadas desde thales.cica.es/sevilla/… ya no existen (404). "
-                 "Hay que comprobar en la Fase 1 si el problema conserva otra figura.",
+    "Figuras perdidas": "los ficheros que dan 404 se recuperan, si existe copia, del Internet Archive "
+                        "(lo indica la columna notas del inventario). Los que siguen en «Errores de descarga» "
+                        "no tienen copia: habrá que valorar en la Fase 1 si el problema se entiende sin ellos.",
     "2011-XXVII": "los problemas están en una única presentación de SlideShare (65 diapositivas, empieza por "
                   "«Los carros del supermercado»). Fase y número se asignan en la Fase 1.",
     "2014-XXX, 2015-XXXI, 2022-XXXVII": "un único material por fase (presentación o PDF de soluciones) con todos los problemas.",
@@ -123,6 +124,18 @@ def descargar(url, ruta):
     ruta.parent.mkdir(parents=True, exist_ok=True)
     ruta.write_bytes(datos)
     return True, None
+
+
+def copia_archivada(url):
+    """URL de la copia más cercana en el Internet Archive (contenido original, sin la barra de Wayback)."""
+    sin_esquema = re.sub(r"^https?://", "", url)
+    datos, _ = pedir("https://archive.org/wayback/available?url=" + urllib.parse.quote(sin_esquema, safe="/:"))
+    if not datos:
+        return None
+    m = re.search(r'"timestamp":\s*"(\d+)"', decodificar(datos))
+    if not m or '"available": true' not in decodificar(datos):
+        return None
+    return f"https://web.archive.org/web/{m.group(1)}id_/http://{sin_esquema}"
 
 
 def decodificar(b):
@@ -238,7 +251,7 @@ def deducir_problema(texto_enlace, url, fase_ctx):
 
 def deducir_contenido(texto_enlace, url):
     t = (texto_enlace + " " + urllib.parse.unquote(url)).lower()
-    if re.search(r"bases|premio|paco anillo|cartel|clasificad|inscrip|consentim|sedes|diploma|acta", t):
+    if re.search(r"bases|premio|paco ?anillo|cartel|clasificad|inscrip|consentim|sedes|diploma|acta", t):
         return "otro"
     if re.search(r"soluci|resoluci|resuelt", t):
         return "solucion"
@@ -430,10 +443,16 @@ class Rastreador:
         fila = self.inv.añadir(url, edicion=ed["id"], fase=fase, numero=numero, titulo=titulo, tipo=tipo,
                                contenido=contenido, origen=origen["id"], ruta_local=ruta.relative_to(RAIZ).as_posix())
         ok, err = descargar(url, ruta)
+        notas = ""
+        if not ok and err == "HTTP 404":
+            copia = copia_archivada(url)
+            if copia:
+                ok, err = descargar(copia, ruta)
+                notas = f"recuperado de archive.org: {copia}"
         if not ok:
             fila.update(estado="error", notas=err, ruta_local="")
             return
-        fila.update(estado="descargado", bytes=str(ruta.stat().st_size))
+        fila.update(estado="descargado", bytes=str(ruta.stat().st_size), notas=notas)
         if tipo == "zip":
             self.descomprimir(fila, ruta, ed)
 

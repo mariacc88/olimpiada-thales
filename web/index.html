@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Problemas Olimpiada Thales</title>
+  <meta name="description" content="Banco de problemas de la Olimpiada Matemática Thales (2.º de ESO): explora por año, fase, tema y dificultad, y genera hojas en PDF.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera-texto">
+      <h1>Banco de problemas de la Olimpiada Matemática Thales</h1>
+      <p class="subtitulo">2.º de ESO · Andalucía · <span id="total">…</span></p>
+    </div>
+    <button class="boton boton-hoja" id="abrir-hoja" type="button" aria-controls="panel-hoja" aria-expanded="false">
+      Mi hoja <span class="contador" id="contador-hoja">0</span>
+    </button>
+  </header>
+
+  <div class="disposicion">
+    <aside class="filtros" aria-label="Filtros">
+      <details class="filtros-plegable" open>
+        <summary>Filtros</summary>
+        <div class="filtro">
+          <label for="f-texto">Buscar</label>
+          <input id="f-texto" type="search" placeholder="Palabras del enunciado o del título">
+        </div>
+        <div class="filtro filtro-fila">
+          <div>
+            <label for="f-desde">Desde</label>
+            <select id="f-desde"></select>
+          </div>
+          <div>
+            <label for="f-hasta">Hasta</label>
+            <select id="f-hasta"></select>
+          </div>
+        </div>
+        <fieldset class="filtro">
+          <legend>Fase</legend>
+          <label><input type="checkbox" name="fase" value="provincial" checked> Provincial</label>
+          <label><input type="checkbox" name="fase" value="regional" checked> Regional</label>
+        </fieldset>
+        <fieldset class="filtro" id="f-bloques">
+          <legend>Bloque temático</legend>
+        </fieldset>
+        <div class="filtro">
+          <label for="f-etiqueta">Etiqueta</label>
+          <select id="f-etiqueta"><option value="">Todas</option></select>
+        </div>
+        <fieldset class="filtro" id="f-dificultades">
+          <legend>Dificultad</legend>
+        </fieldset>
+        <div class="filtro">
+          <label><input type="checkbox" id="f-solucion"> Solo con solución</label>
+        </div>
+        <button class="boton boton-secundario" id="limpiar" type="button">Quitar filtros</button>
+      </details>
+    </aside>
+
+    <main class="resultados">
+      <div class="barra-resultados">
+        <p id="resumen" aria-live="polite"></p>
+        <label class="orden">Orden
+          <select id="f-orden">
+            <option value="asc">Más antiguos primero</option>
+            <option value="desc">Más recientes primero</option>
+          </select>
+        </label>
+      </div>
+      <div id="lista"></div>
+      <button class="boton boton-secundario ver-mas" id="ver-mas" type="button" hidden>Ver más problemas</button>
+    </main>
+  </div>
+
+  <aside class="panel-hoja" id="panel-hoja" aria-label="Mi hoja de problemas" hidden>
+    <div class="panel-cabecera">
+      <h2>Mi hoja</h2>
+      <button class="boton-icono" id="cerrar-hoja" type="button" aria-label="Cerrar">×</button>
+    </div>
+    <p class="ayuda" id="hoja-vacia">Añade problemas con el botón «Añadir a la hoja» de cada uno.</p>
+    <ol class="hoja-lista" id="hoja-lista"></ol>
+    <div class="hoja-opciones" id="hoja-opciones">
+      <label for="h-titulo">Título de la hoja</label>
+      <input id="h-titulo" type="text" value="Problemas de la Olimpiada Matemática Thales">
+      <fieldset>
+        <legend>Soluciones</legend>
+        <label><input type="radio" name="soluciones" value="no" checked> Sin soluciones</label>
+        <label><input type="radio" name="soluciones" value="final"> Al final de la hoja</label>
+        <label><input type="radio" name="soluciones" value="tras"> Tras cada problema</label>
+      </fieldset>
+      <label><input type="checkbox" id="h-origen" checked> Indicar edición y fase de cada problema</label>
+      <button class="boton" id="generar" type="button">Generar PDF</button>
+      <button class="boton boton-secundario" id="vaciar" type="button">Vaciar la hoja</button>
+      <p class="estado" id="estado-pdf" aria-live="polite"></p>
+    </div>
+  </aside>
+
+  <footer class="pie">
+    <p>Los problemas, sus soluciones y sus ilustraciones son obra de la <a href="https://thales.cica.es">Sociedad Andaluza de Educación Matemática Thales</a> (SAEM Thales), que los publica en <a href="https://olimpiada.saemthales.es/">olimpiada.saemthales.es</a> bajo licencia Creative Commons (su web enlaza a <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/es/">CC BY-NC-SA 2.5 ES</a> y a <a href="https://creativecommons.org/licenses/by/3.0/es/">CC BY 3.0 ES</a>). Aquí se reproducen con atribución, sin fines comerciales y con enlace a cada original.</p>
+    <p>Este proyecto no está vinculado a la SAEM Thales. La transcripción y la clasificación temática y por dificultad son propias y están en revisión.</p>
+    <p><a href="https://github.com/mariacc88/olimpiada-thales">Código y datos en GitHub</a> · Datos generados el <span id="generado">…</span></p>
+  </footer>
+
+  <template id="plantilla-problema">
+    <article class="problema">
+      <header class="problema-cabecera">
+        <h2 class="problema-titulo"></h2>
+        <p class="problema-origen"></p>
+        <ul class="insignias"></ul>
+      </header>
+      <div class="problema-enunciado texto"></div>
+      <details class="problema-solucion">
+        <summary>Ver solución</summary>
+        <div class="texto"></div>
+      </details>
+      <p class="sin-solucion" hidden>No se dispone de la solución oficial.</p>
+      <footer class="problema-pie">
+        <button class="boton boton-anadir" type="button"></button>
+        <span class="enlaces-origen"></span>
+      </footer>
+    </article>
+  </template>
+</body>
+</html>

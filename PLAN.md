@@ -89,14 +89,14 @@ Thales/
 │   ├── 2016-XXXII/ …
 │   └── …
 │
+├── requirements.txt            ← dependencias de Python (pyyaml, pillow, pymupdf)
 ├── scripts/
 │   ├── descargar.py            ← Fase 0: rastrea las dos webs y rellena inventario y raw/
-│   ├── extraer/                ← Fase 1: un extractor por formato
-│   │   ├── html_antiguo.py
-│   │   ├── pdf.py
-│   │   ├── pps.py              ← convierte con LibreOffice, quita diapositivas duplicadas
-│   │   └── doc.py
-│   ├── clasificar.py           ← Fase 2: importa la taxonomía antigua, exporta/importa tablas de revisión
+│   ├── extraer/
+│   │   ├── preparar.py         ← Fase 1: reúne texto, páginas e imágenes de cada problema en trabajo/
+│   │   └── recortar.py         ← Fase 1: recorta una figura de una fuente a 300 ppp
+│   ├── clasificar.py           ← Fase 2 (pendiente): exporta/importa la tabla de revisión
+│   ├── comun.py                ← lectura de problemas y taxonomía, compartida por los demás
 │   ├── validar.py              ← comprueba metadatos, figuras referenciadas, etiquetas válidas
 │   ├── construir.py            ← Fase 3: genera el índice JSON y los fragmentos Typst
 │   └── hoja.py                 ← genera en local un PDF con los problemas elegidos
@@ -143,9 +143,10 @@ fase: provincial            # provincial | regional
 numero: 1
 titulo: El robot
 bloques: [logica]           # identificadores de taxonomia.yaml (uno o varios)
+bloques_thales: []          # el bloque que le asignó la web antigua, si lo tiene (informativo)
 etiquetas: [deduccion]      # taxonomía fina, identificadores de taxonomia.yaml
 dificultad: medio           # facil | medio | dificil
-origen_clasificacion: propuesta   # thales | propuesta | revisada
+origen_clasificacion: propuesta   # propuesta | revisada
 tiene_solucion: true
 fuentes: [F0123]            # ids del inventario
 estado: borrador            # borrador | revisado
@@ -162,6 +163,15 @@ Texto en Markdown, con fórmulas en LaTeX ($a^2+b^2=c^2$) y figuras:
 
 …
 ```
+
+Convenciones fijadas en el piloto:
+
+- **Figuras:** `fig1.png`, `fig2.png`… para el enunciado y `fig-solucion.png`, `fig-solucion1.png`… para la solución. El texto alternativo describe la figura; la web lo usa para accesibilidad y el PDF lo oculta.
+- **Ilustraciones decorativas** (fotos, dibujos que no aportan datos) se incluyen como `ilustracion.png`, tras el primer párrafo del enunciado. Se imprimen pequeñas (4,5 cm como máximo en su lado mayor) y en la web se muestran a 220 px. No se incluyen las imágenes de plantilla que se repiten en todas las diapositivas o en los membretes (logotipos, retrato de Thales, fondos), ni las de las portadas de las presentaciones.
+- **Tablas y cuadrículas** se transcriben como tablas Markdown, no como imagen. Si no tienen cabecera, se deja la primera fila vacía (`| | | |`) y la web y el PDF la ocultan.
+- **Listas con números no consecutivos** (definiciones de crucigramas, etc.) se escriben como viñetas con el número en negrita, porque Markdown renumera las listas.
+- **Soluciones:** se transcriben fieles al original pero condensadas: cuando el original desarrolla un recuento paso a paso en muchas diapositivas, se recoge el razonamiento y el resultado, y se indica en `notas`. Las erratas evidentes del original se corrigen y se anota.
+- **Clasificación:** `bloques_thales` conserva lo que dijo la web antigua; `bloques`, `etiquetas` y `dificultad` son la propuesta que se revisa.
 
 ### 4.4. `taxonomia.yaml`
 
@@ -207,29 +217,34 @@ Las etiquetas actuales son de muestra; las instrucciones para editarlas están a
 - **Entregable:** `inventario.csv` completo y un informe de huecos (ediciones o problemas sin material localizado).
 
 ### Fase 1. Extracción
-- Cada extractor genera un borrador de `problema.md` y las figuras:
-  - **HTML antiguo:** se parsea directamente; incluye bloque y dificultad.
-  - **PDF:** se extrae el texto con `pdftotext`, se renderizan las páginas a PNG y se recortan las figuras.
-  - **PPS/PPSX:** se convierten a PDF con LibreOffice, se eliminan las diapositivas casi idénticas y se sigue el camino del PDF.
-  - **DOC:** se convierten con LibreOffice.
-- Después Claude limpia cada borrador:
-  - Separa enunciado y solución.
-  - Pasa las fórmulas a LaTeX.
-  - Recupera los símbolos perdidos comparando con la imagen de la página original.
-  - Elimina los restos de navegación.
+- `preparar.py <edición>…` reúne en `trabajo/<edición>/<fase>-<n>/` todo el material de cada problema:
+  - un `borrador.md` con los metadatos propuestos y el texto extraído de cada fuente;
+  - `paginas/`: las páginas renderizadas;
+  - `imagenes/`: las imágenes incrustadas y las figuras de la web antigua.
+  - Según el formato:
+    - **HTML antiguo:** el cuerpo del nodo se pasa a Markdown con pandoc, con sus figuras y el bloque de Thales.
+    - **PDF:** texto por página con PyMuPDF, páginas renderizadas e imágenes incrustadas.
+    - **PPS/PPSX/PPT/DOC:** se convierten a PDF con LibreOffice y se omiten las diapositivas que solo añaden elementos a la siguiente (animaciones).
+    - **GeoGebra (`.ggb`):** se extraen sus textos (enunciado y solución) y sus imágenes.
+    - **SlideShare:** las diapositivas descargadas como imagen.
+- Después Claude redacta `problemas/<edición>/<fase>-<n>/problema.md`:
+  - Lee el texto extraído y las páginas como imagen.
+  - Separa enunciado y solución, pasa las fórmulas a LaTeX y reconstruye los símbolos perdidos.
+  - Recorta las figuras con `recortar.py`. La opción `--sin-fondo` quita el fondo de las diapositivas.
 - Todo queda con `estado: borrador`.
 
 ### Fase 2. Clasificación
-- **1985–2010:** se importan bloque y dificultad de la web antigua (`origen_clasificacion: thales`).
-- **Resto:** Claude propone bloque y dificultad tomando como referencia los ejemplos ya etiquetados por Thales (`origen_clasificacion: propuesta`).
+- La web antigua solo asignó bloque a parte de los problemas anteriores a 2010 y casi nunca dificultad. Ese dato se guarda en `bloques_thales` y sirve de referencia.
+- Claude propone bloque, etiquetas y dificultad para todos (`origen_clasificacion: propuesta`).
 - `clasificar.py` exporta una tabla CSV con id, título, enunciado abreviado y la clasificación propuesta. Se revisa a mano (por ejemplo en una hoja de cálculo) y se reimporta (`origen_clasificacion: revisada`).
 - Cuando esté definida la taxonomía fina, se añade a `taxonomia.yaml` y se repite el ciclo de propuesta y revisión con las etiquetas.
 
 ### Fase 3. Base de datos y construcción
 - La fuente de verdad son los ficheros de `problemas/`: se leen, se editan a mano y se versionan con git.
 - `construir.py` genera, sin guardarlos en git:
-  - `web/datos/problemas.json`: índice con metadatos, enunciado y solución (HTML/Markdown) y rutas de las figuras.
-  - `web/datos/typst/<id>.typ`: cada problema convertido a Typst con pandoc, para generar los PDF.
+  - `web/datos/problemas.json`: índice con metadatos, enunciado y solución en Markdown y rutas de las figuras.
+  - `web/datos/fig/<id>/…`: las figuras.
+  - `web/datos/typst/<id>-enunciado.typ` y `<id>-solucion.typ`: cada parte convertida a Typst con pandoc. A cada figura se le da su tamaño natural en papel (300 ppp para los recortes, 96 ppp para las imágenes pequeñas de la web antigua; como máximo 15 cm).
 - `validar.py` se ejecuta antes de construir: comprueba metadatos obligatorios, figuras que existen, etiquetas válidas e identificadores únicos.
 
 ### Fase 4. Explorador web (GitHub Pages)
@@ -241,9 +256,12 @@ Las etiquetas actuales son de muestra; las instrucciones para editarlas están a
   - Soluciones al final o tras cada problema.
   - Mostrar o no la edición y la fase.
   - Título de la hoja.
-- **Generación del PDF:** se hace en el propio navegador con **typst.ts** (Typst compilado a WebAssembly) usando `plantillas/hoja.typ`. Así no hace falta servidor y la maquetación es de calidad tipo LaTeX.
-  - **Alternativa local:** `hoja.py 2016-regional-3 1999-provincial-2 … --soluciones` genera el mismo PDF con Typst instalado.
-- **Despliegue:** `publicar.yml` valida, construye y publica en GitHub Pages en cada push a `main`.
+- **Generación del PDF:** se hace en el propio navegador con **typst.ts 0.7** (Typst compilado a WebAssembly) usando `plantillas/hoja.typ`. No hace falta servidor y la maquetación es de calidad tipo LaTeX.
+  - La primera vez descarga el compilador y las fuentes desde jsDelivr (unos segundos).
+  - Comprobado en el piloto: el PDF del navegador sale igual que el de Typst en local.
+  - **Alternativa local:** `hoja.py 2016-regional-3 1999-provincial-2 … --soluciones final` genera el mismo PDF con Typst instalado.
+  - `componer()` de `hoja.py` y `componerHoja()` de `web/app.js` deben producir el mismo documento: si se cambia una, hay que cambiar la otra.
+- **Despliegue:** `publicar.yml` valida, construye y publica en GitHub Pages en cada push a `main`. Fija la versión de pandoc (3.10, la misma que en local), porque la salida Typst cambia entre versiones.
 
 ### Fase 5. Revisión
 Lista de comprobación por problema, que cambia `estado` a `revisado`:
@@ -257,7 +275,25 @@ El explorador puede ocultar los borradores o marcarlos como tales.
 
 ---
 
-## 6. Orden de ejecución
+## 6. Flujo de trabajo y comandos
+
+Requisitos en local: Python 3.12+, pandoc 3.10, LibreOffice (solo para la Fase 1) y Typst (solo para `hoja.py`).
+
+```sh
+python -m venv .venv && .venv/Scripts/pip install -r requirements.txt   # una vez
+
+python scripts/descargar.py                                    # Fase 0 (idempotente)
+.venv/Scripts/python scripts/extraer/preparar.py 2016-XXXII    # Fase 1: material de trabajo
+.venv/Scripts/python scripts/extraer/recortar.py F0855 2 0.07 0.19 0.25 0.35 problemas/…/fig1.png --sin-fondo
+.venv/Scripts/python scripts/validar.py                        # comprobar la base de datos
+.venv/Scripts/python scripts/construir.py                      # generar web/datos/
+python -m http.server 8765 --directory web                     # ver la web en http://localhost:8765
+.venv/Scripts/python scripts/hoja.py 2016-regional-3 2023-provincial-1 --soluciones final -o hoja.pdf
+```
+
+---
+
+## 7. Orden de ejecución
 
 1. **Andamiaje:** estructura de carpetas, `taxonomia.yaml`, repositorio git y `.gitignore`.
 2. **Fase 0 completa:** inventario de todo y lista de huecos.
@@ -278,11 +314,9 @@ El explorador puede ocultar los borradores o marcarlos como tales.
 
 ---
 
-## 7. Riesgos y decisiones pendientes
+## 8. Riesgos y decisiones pendientes
 
-- **Derechos del contenido.** Los problemas son de SAEM Thales. La web antigua indica una licencia Creative Commons, aunque los enlaces muestran tanto BY 3.0 como BY-NC-SA 2.5. Antes de publicar conviene:
-  - Atribuir claramente y enlazar cada problema con su fuente.
-  - Plantearse avisar o pedir permiso a la Sociedad Thales.
+- **Derechos del contenido.** Los problemas son de SAEM Thales. La web antigua indica una licencia Creative Commons, aunque los enlaces muestran tanto BY 3.0 ES como BY-NC-SA 2.5 ES; la web nueva no indica licencia. **Decisión:** se publica con una atribución explícita en el pie de la web y en el README (autoría de Thales, licencia, uso sin fines comerciales, enlace a cada original y aviso de que el proyecto no está vinculado a Thales). Se respeta la lectura más restrictiva (BY-NC-SA). Cuando el banco esté más completo y pulido, se escribirá a la Sociedad Thales.
 - **Copia local de las fuentes.** Los ficheros originales (cientos de MB) no se suben al repositorio. Si se quiere conservarlos, mejor guardarlos aparte (disco o almacenamiento externo), ya que la web antigua podría desaparecer.
 - **Figuras.** Son la parte más costosa y la más propensa a errores. El recorte se hace de forma semiautomática y requiere revisión.
 - **Dificultad.** El criterio de Thales es relativo a la prueba (fácil/medio/difícil dentro de la olimpiada). Las propuestas para problemas nuevos intentarán imitarlo, pero son subjetivas.
