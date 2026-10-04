@@ -17,6 +17,7 @@ Uso:  python scripts/extraer/preparar.py 1985-I 2016-XXXII ...
 
 import csv
 import hashlib
+import html
 import re
 import shutil
 import subprocess
@@ -134,8 +135,13 @@ def extraer_ggb(ruta, carpeta, prefijo):
             xml = z.read("geogebra.xml").decode("utf-8", "replace") if "geogebra.xml" in z.namelist() else ""
     except zipfile.BadZipFile:
         return "(fichero GeoGebra no válido)"
-    textos = re.findall(r'(?:caption|val)="([^"]{15,})"', xml)
-    return "Construcción de GeoGebra. Textos que contiene:\n\n" + "\n".join(f"- {t}" for t in textos[:40])
+    # Los textos de la construcción (enunciado, pasos de la solución…) son expresiones entre comillas
+    textos = []
+    for etiqueta, exp in re.findall(r'<expression label="([^"]+)" exp="([^"]*)"', xml):
+        exp = html.unescape(exp)
+        if exp.startswith('"') and len(exp) > 15:
+            textos.append(f"**{etiqueta}:** {exp.strip(chr(34))}")
+    return "Construcción de GeoGebra. Textos que contiene:\n\n" + "\n\n".join(textos[:60])
 
 
 # --- Preparación de cada problema ---------------------------------------------

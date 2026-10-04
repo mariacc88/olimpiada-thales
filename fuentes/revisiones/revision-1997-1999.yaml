@@ -1,0 +1,156 @@
+1997-XIII/provincial-1:
+  clasificar: [[numeros], [proporcionalidad], facil]
+1997-XIII/provincial-2:
+  clasificar: [[numeros, logica], [deduccion], medio]
+  alt: [[fig1.png, "Hoja de periódico con las páginas 12 y 53"]]
+1997-XIII/provincial-3:
+  clasificar: [[numeros], [ecuaciones], medio]
+  enunciado: |
+    Tadeo, Anastasio, Indalecio y Maroto son cuatro amigos que, curioseando en una casa abandonada, encontraron una báscula que solo pesaba objetos comprendidos entre 50 y 100 kg. Ninguno de los cuatro superaba los 50 kg de peso y, si se pesaban tres de ellos, siempre superaban los 100 kg, así que se pesaron de dos en dos y estos fueron los pesos:
+
+    - Tadeo y Anastasio pesaron juntos 69 kg.
+    - Anastasio e Indalecio pesaron 79 kg.
+    - Indalecio y Tadeo pesaron 72 kg.
+    - Maroto y Tadeo pesaron 64 kg.
+
+    ¿Sabrías averiguar cuánto pesa cada uno?
+
+    Explica cómo se podría obtener el peso de cada uno si se hubieran podido pesar de 3 en 3.
+1997-XIII/provincial-4:
+  clasificar: [[funciones], [graficas], medio]
+  alt: [[fig1.png, "Gráfica velocidad–espacio recorrido de una vuelta y siete circuitos, A a G, con la salida marcada"]]
+1997-XIII/provincial-5:
+  clasificar: [[funciones, numeros], [movimiento, ecuaciones], dificil]
+  reemplazar:
+    - ["a velocidades constantes, Cuando", "a velocidades constantes. Cuando"]
+1997-XIII/provincial-6:
+  clasificar: [[geometria], [], dificil]
+  enunciado: |
+    Las distancias entre tres ciudades A, B y C son:
+
+    - Entre A y B, 70 km.
+    - Entre B y C, 50 km.
+    - Entre A y C, 60 km.
+
+    Se quiere construir un hospital con carreteras que lo unan a cada una de las tres ciudades, pero solo se ha adjudicado presupuesto para 84 km de carretera.
+
+    ¿Existe algún punto del interior del triángulo formado por las tres ciudades en el que pueda construirse el hospital?
+1997-XIII/regional-1:
+  clasificar: [[geometria], [areas], facil]
+1997-XIII/regional-2:
+  clasificar: [[numeros], [cifras], dificil]
+1997-XIII/regional-3:
+  clasificar: [[funciones], [graficas, movimiento], dificil]
+1997-XIII/regional-4:
+  clasificar: [[numeros, logica], [cifras, deduccion], dificil]
+  reemplazar:
+    - ["*8 2 3 7 2 + 9 2 3 7 2 + 8 1 4 6 2 = 1 1 0 5 9 1*", "$$82\\,372 + 92\\,372 + 81\\,462 = 110\\,591$$"]
+    - ["(A cifras distintas le corresponden", "(A cifras distintas les corresponden"]
+1997-XIII/regional-5:
+  clasificar: [[numeros, geometria], [proporcionalidad, areas], dificil]
+  reemplazar:
+    - ["superficie de 1 m2.", "superficie de 1 m²."]
+1997-XIII/regional-6:
+  clasificar: [[logica], [deduccion], dificil]
+  renombrar: [[fig1.png, null]]
+  reemplazar:
+    - ["ningún otro acabó 1.0 ni 0-1", "ningún otro acabó 1-0 ni 0-1"]
+    - ["La tabla de los 11 goles que se marcaron en total fue...", "La tabla de los 11 goles que se marcaron en total fue:\n\n| Equipo | A favor | En contra |\n|---|---|---|\n| A | 4 | 2 |\n| B | 2 | 2 |\n| C | 3 | 4 |\n| D | 2 | 3 |"]
+  notas: "La tabla de goles era una imagen; se ha transcrito."
+
+1998-XIV/provincial-1:
+  clasificar: [[numeros], [divisibilidad], facil]
+  reemplazar:
+    - ["Mi madre me envión", "Mi madre me envió"]
+    - ["con las 3487 ptas. que me dio", "con las 3487 ptas que me dio"]
+    - ["cuesta a 12.50 ptas. y un paquete", "cuesta a 12,50 ptas y un paquete"]
+1998-XIV/provincial-2:
+  clasificar: [[numeros], [proporcionalidad], medio]
+  enunciado: |
+    Estos son diferentes tamaños de fotografías (medidas en cm) que nos pueden ofrecer al revelar nuestros carretes:
+
+    - 10 × 15
+    - 13 × 15
+    - 20 × 25
+    - 30 × 45
+
+    Si el negativo que nosotros entregamos en la tienda es de 24 × 36 mm, ¿qué tamaños de los anteriores podremos obtener?
+1998-XIV/provincial-3:
+  clasificar: [[estadistica, numeros], [probabilidad, fracciones], medio]
+1998-XIV/provincial-4:
+  clasificar: [[funciones], [movimiento], dificil]
+  reemplazar:
+    - ["a una velocidad de cuatro km / hora. Esta velocidad se reduce a tres km / hora cuando desciende.", "a una velocidad de 4 km/h. Esta velocidad se reduce a 3 km/h cuando desciende."]
+  notas: "POSIBLE ENUNCIADO INCOMPLETO: así figura en la web, pero en la versión habitual de este problema se dan tres velocidades (llano, subida y bajada)."
+1998-XIV/provincial-5:
+  clasificar: [[funciones], [graficas], facil]
+  alt: [[fig1.png, "Tres gráficas tiempo–peso: dos rectas que parten de distinta altura y una que parte del eje horizontal"]]
+1998-XIV/provincial-6:
+  clasificar: [[geometria], [areas], medio]
+1998-XIV/regional-1:
+  clasificar: [[numeros], [fracciones], facil]
+  reemplazar:
+    - ["Si k es un número entero y k /30 está entre 1/3 y 2/5. ¿Cuál es el valor de k?", "Si $k$ es un número entero y $\\frac{k}{30}$ está entre $\\frac{1}{3}$ y $\\frac{2}{5}$, ¿cuál es el valor de $k$?"]
+1998-XIV/regional-2:
+  clasificar: [[geometria], [], medio]
+  alt: [[fig1.png, "Pentominó cuadriculado que gira apoyado sobre los lados de un triángulo equilátero bordeado de rectángulos"]]
+1998-XIV/regional-3:
+  clasificar: [[estadistica], [probabilidad], medio]
+  alt: [[fig1.png, "Tres ruletas: A con 1, 6 y 3; B con 5, 4 y 2; C con 6, 8 y 11"]]
+1998-XIV/regional-4:
+  clasificar: [[funciones], [graficas], facil]
+  alt: [[fig1.png, "Gráfica escalonada del precio (pesetas) según el peso (gramos) de las cartas urgentes"]]
+1998-XIV/regional-5:
+  clasificar: [[geometria], [areas, pitagoras], dificil]
+  alt: [[fig1.png, "Hoja A4 con los trozos visibles de un cuadrado inclinado cuyos vértices quedan fuera de la hoja"]]
+1998-XIV/regional-6:
+  clasificar: [[logica], [deduccion], medio]
+
+1999-XV/provincial-1:
+  clasificar: [[estadistica, geometria], [probabilidad, angulos], medio]
+1999-XV/provincial-2:
+  clasificar: [[estadistica], [combinatoria], facil]
+  reemplazar:
+    - ["como llegan a la meta el resto de los participantes ¿Cuántos", "cómo llegan a la meta el resto de los participantes, ¿cuántos"]
+1999-XV/provincial-3:
+  clasificar: [[geometria, numeros], [ecuaciones], facil]
+  reemplazar:
+    - ["mide 21 cm. de longitud", "mide 21 cm de longitud"]
+  alt: [[fig1.png, "Segmento AB con el punto P: a un lado un cuadrado de lado AP y al otro un triángulo equilátero de lado PB"]]
+1999-XV/provincial-4:
+  clasificar: [[numeros], [cifras, divisibilidad], facil]
+  reemplazar:
+    - ["suman 13 ¿Cuántos años", "suman 13, ¿cuántos años"]
+1999-XV/provincial-5:
+  clasificar: [[geometria], [areas], medio]
+  reemplazar:
+    - ["di que relación hay", "di qué relación hay"]
+  alt: [[fig1.png, "Dos cuadrados en una trama de puntos, uno con lados horizontales y otro girado 45°"], [fig2.png, "Pajarita dibujada en una trama de puntos"]]
+1999-XV/provincial-6:
+  clasificar: [[funciones], [graficas, movimiento], dificil]
+  reemplazar:
+    - ["alcance es de 3 pasos ¿En qué momentos", "alcance es de 3 pasos, ¿en qué momentos"]
+  alt: [[fig1.png, "Trama de puntos con los recorridos de los dos ciclistas desde el punto A, uno continuo y otro punteado"]]
+1999-XV/regional-1:
+  clasificar: [[estadistica, numeros], [combinatoria, cifras], medio]
+  reemplazar:
+    - ["por 12 palotes ¿Existe", "por 12 palotes. ¿Existe"]
+1999-XV/regional-2:
+  clasificar: [[numeros], [proporcionalidad], dificil]
+  reemplazar:
+    - ["a cambio de cien pesetas ¿Cómo lo conseguiré?", "a cambio de cien pesetas. ¿Cómo lo conseguiré?"]
+1999-XV/regional-3:
+  clasificar: [[numeros], [proporcionalidad, fracciones], medio]
+  reemplazar:
+    - ["así que que pondré dinero, tomad 200 pesetas»", "así que pondré dinero; tomad 200 pesetas»."]
+1999-XV/regional-4:
+  clasificar: [[geometria], [areas], dificil]
+  alt: [[fig1.png, "Dos rectas paralelas con los triángulos ABC y ABD de igual base y altura, y un pentágono naranja"]]
+1999-XV/regional-5:
+  clasificar: [[estadistica], [probabilidad], medio]
+  reemplazar:
+    - ["con las correspondientes direcciones, ¿Cuál es", "con las correspondientes direcciones. ¿Cuál es"]
+1999-XV/regional-6:
+  clasificar: [[estadistica, numeros], [combinatoria], medio]
+  reemplazar:
+    - ["las res-puestas anteriores", "las respuestas anteriores"]

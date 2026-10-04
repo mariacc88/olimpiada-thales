@@ -368,7 +368,9 @@ class Rastreador:
             return RAW / "web-antigua" / f"node-{n}.html"
         return None
 
-    def pagina(self, url, ed, profundidad, origen=""):
+    def pagina(self, url, ed, profundidad, origen="", pista=None):
+        """pista: (fase, número, título) con que la página de la edición enlaza este nodo
+        («Problema N: título»). La numeración de esa lista prevalece sobre la del propio nodo."""
         if url in self.visitados:
             return
         self.visitados.add(url)
@@ -391,16 +393,30 @@ class Rastreador:
         # ¿Es un nodo de problema de la web antigua? («I OMT: Provincial 1: Marinerías.»)
         es_problema = False
         m = re.match(r"([IVXL]+)\s+OMT\s*:\s*(Provincial|Regional)\s*(\d+)\s*:?\s*(.*?)\.?$", titulo, re.I)
-        if es_antigua and m:
+        if es_antigua and (m or pista):
             es_problema = True
+            if m:
+                fase, numero, tit = m.group(2).lower(), m.group(3), m.group(4)
+                if pista and pista[1] != numero:
+                    fila["notas"] = f"numeración según la lista de la edición (el nodo dice {fase} {numero})"
+                    numero = pista[1]
+            else:  # nodo cuyo título no sigue el formato habitual: se usan los datos de la lista
+                fase, numero, tit = pista
+                fila["notas"] = "fase y número según la lista de la edición (el título del nodo no los indica)"
             terminos = [int(t) for t in re.findall(r"taxonomy/term/(\d+)", seg)]
-            fila.update(fase=m.group(2).lower(), numero=m.group(3), titulo=m.group(4), contenido="enunciado",
+            fila.update(fase=fase, numero=numero, titulo=tit, contenido="enunciado",
                         tipo="nodo-problema",
                         bloques_thales=" ".join(TERMINOS_BLOQUE[t] for t in terminos if t in TERMINOS_BLOQUE),
                         dificultad_thales=" ".join(TERMINOS_DIFICULTAD[t] for t in terminos if t in TERMINOS_DIFICULTAD))
         if "node-acidfree" in seg[:200]:
             fila.update(contenido="otro", notas="álbum de fotos")
             return
+
+        # Applets de GeoGebra: el fichero .ggb va en un <param name="filename">
+        for valor in re.findall(r'<param\b(?=[^>]*name="filename")[^>]*value="([^"]+\.ggb)"', seg):
+            u = normalizar_url(valor, url)
+            if "thales.cica.es" in u:
+                self.fichero(u, ed, fila, fila["titulo"], fila["fase"], fila["numero"], "?", "ggb")
 
         fase_pagina = "regional" if "regional" in titulo.lower() else "provincial" if "provincial" in titulo.lower() else ""
         for href, txt, fase_ctx, es_img in enlaces_con_contexto(seg, fase_pagina):
@@ -418,7 +434,9 @@ class Rastreador:
                 continue
             if id_nodo_antiguo(u):
                 if profundidad < PROFUNDIDAD_MAX:
-                    self.pagina(u, ed, profundidad + 1, fila["id"])
+                    mp = re.match(r"Problema\s*(\d+)\s*:\s*(.+)", txt)
+                    pista = (fase_ctx, mp.group(1), mp.group(2).strip()) if mp and fase_ctx else None
+                    self.pagina(u, ed, profundidad + 1, fila["id"], pista)
                 continue
             if ext in EXT_FICHEROS and ("thales.cica.es" in u or "saemthales.es" in u):
                 fase, num, tit = deducir_problema(txt, u, fase_ctx)

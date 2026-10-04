@@ -1,0 +1,183 @@
+1988-IV/provincial-1:
+  clasificar: [[numeros], [divisibilidad], facil]
+  reemplazar:
+    - ["a) N > 3/4 x 100 ; N < 5 x 17 ; N es múltiplo de 10.", "a) $N > \\frac{3}{4} \\cdot 100$; $N < 5 \\cdot 17$; $N$ es múltiplo de 10."]
+    - ["b) N > $3^{3}$; N<$2^{5}$ ; N es múltiplo de 7.", "b) $N > 3^3$; $N < 2^5$; $N$ es múltiplo de 7."]
+    - ["c) N + M = 9 ; N - M = 11.", "c) $N + M = 9$; $N - M = 11$."]
+    - ["d) M es un cuadrado perfecto impar; M < 12 ; M : N = N.", "d) $M$ es un cuadrado perfecto impar; $M < 12$; $M : N = N$."]
+    - ["el valor del número N.", "el valor del número $N$."]
+1988-IV/provincial-2:
+  clasificar: [[geometria], [areas], facil]
+  alt: [[fig1.png, "Solar rectangular de 11 × 7 m con el vaso irregular de la piscina y sus medidas"]]
+1988-IV/provincial-4:
+  clasificar: [[logica], [juegos], medio]
+  reemplazar:
+    - ["**Paseos en tren**\n\n", ""]
+    - ["donde se hayan dos vagones", "donde se hallan dos vagones"]
+    - ["del vahón verde", "del vagón verde"]
+  alt: [[fig1.png, "Vía circular con un puente, dos vagones (rojo y verde) y la locomotora en la vía principal"]]
+1988-IV/provincial-5:
+  clasificar: [[numeros], [fracciones, divisibilidad], medio]
+  renombrar: [[fig1.png, null]]
+  reemplazar:
+    - ["¿De qué otros números es divisor?", "¿De qué otros números es divisor?\n\n$$X = \\dfrac{\\left(\\dfrac{2}{3}\\right)^2 \\times \\left(\\dfrac{3}{2}\\right)^{-3} \\times \\dfrac{2}{3}}{\\left(\\dfrac{2}{3}\\right)^4 : \\left(\\dfrac{2}{3}\\right)^{-2}}$$"]
+  notas: "La expresión de X era una imagen; se ha transcrito."
+1988-IV/provincial-6:
+  clasificar: [[numeros, geometria], [fracciones, areas], medio]
+1988-IV/provincial-7:
+  clasificar: [[geometria], [areas], medio]
+  notas: "FIGURA PERDIDA: el enunciado se refiere a una figura (el peón y los puntos A y B) que no está en la web ni en el Internet Archive."
+1988-IV/provincial-8:
+  clasificar: [[numeros, logica], [fracciones, patrones], medio]
+  reemplazar:
+    - ["sale una nueva fracción (1-F)/(1+F)", "sale una nueva fracción $\\dfrac{1-F}{1+F}$"]
+    - ["Si una fracción F entra", "Si una fracción $F$ entra"]
+    - ["si entra 1/2, sale convertido en 1/3", "si entra $\\frac{1}{2}$, sale convertida en $\\frac{1}{3}$"]
+    - ["si entra 2/3 y la fracción", "si entra $\\frac{2}{3}$ y la fracción"]
+    - ["que sale se mete otra vez y ésta se sigue", "que sale se mete otra vez y esta se sigue"]
+1988-IV/regional-1:
+  clasificar: [[geometria, numeros], [areas], medio]
+  reemplazar:
+    - ["5 veces consecutivas a a cada uno", "5 veces consecutivas a cada uno"]
+1988-IV/regional-2:
+  clasificar: [[geometria], [areas], medio]
+  alt: [[fig1.png, "Vidriera circular dividida en dos zonas, verde y roja, por arcos de circunferencia"]]
+1988-IV/regional-3:
+  clasificar: [[numeros], [fracciones], medio]
+  reemplazar:
+    - ["un 10 % e concepto de IVA", "un 10 % en concepto de IVA"]
+1988-IV/regional-4:
+  clasificar: [[numeros], [divisibilidad], dificil]
+  reemplazar:
+    - ["por los menos 5 años", "por lo menos 5 años"]
+    - ["¿Y que edad tenía?", "¿Y qué edad tenía?"]
+1988-IV/regional-5:
+  clasificar: [[logica], [deduccion], medio]
+  alt: [[fig1.png, "Plano de calles circulares concéntricas y transversales, con los despachos marcados con letras"]]
+1988-IV/regional-6:
+  clasificar: [[geometria], [areas], medio]
+  reemplazar:
+    - ["Dibuja un plano que sirva para hacer la partición de la finca", "Dibuja un plano que sirva para hacer la partición de la finca."]
+1988-IV/regional-7:
+  clasificar: [[numeros], [ecuaciones], medio]
+  alt: [[fig1.png, "Tres casos con tres balanzas cada uno; en los dos primeros están equilibradas"]]
+1988-IV/regional-8:
+  clasificar: [[logica, numeros], [deduccion, ecuaciones], dificil]
+  reemplazar:
+    - ["que los ru-bios", "que los rubios"]
+
+1989-V/provincial-1:
+  clasificar: [[geometria], [areas, pitagoras], facil]
+  alt: [[fig1.png, "Dos triángulos isósceles de lados 5, 5 y 8, y 5, 5 y 6"]]
+1989-V/provincial-2:
+  clasificar: [[numeros], [proporcionalidad], medio]
+  renombrar: [[fig1.png, ilustracion.png], [fig2.png, ilustracion2.png]]
+  alt: [[ilustracion.png, "Ilustración: un perro"], [ilustracion2.png, "Ilustración: un gato"]]
+1989-V/provincial-3:
+  clasificar: [[numeros], [cifras], medio]
+  alt: [[fig1.png, "Hoja de calendario de octubre de 1985 con algunos jueves escritos combinando las cifras 1, 9, 8 y 5"]]
+1989-V/provincial-4:
+  clasificar: [[funciones], [graficas], facil]
+  alt: [[fig1.png, "Gráfica distancia–tiempo del recorrido de Pedro"]]
+1989-V/provincial-5:
+  clasificar: [[numeros, geometria], [fracciones, areas], medio]
+  renombrar: [[fig1.png, ilustracion.png]]
+  alt: [[ilustracion.png, "Ilustración: la abuela"]]
+1989-V/provincial-6:
+  clasificar: [[geometria], [areas, pitagoras], medio]
+1989-V/provincial-7:
+  clasificar: [[numeros], [ecuaciones, fracciones], medio]
+1989-V/provincial-8:
+  clasificar: [[logica], [deduccion], facil]
+  reemplazar:
+    - ["le dijo - ¿te has dado cuenta, Mary Cruz? Ninguno de nosotros tiene pareja vestida de su mismo color.", "le dijo: «¿Te has dado cuenta, Mary Cruz? Ninguno de nosotros tiene pareja vestida de su mismo color»."]
+1989-V/regional-1:
+  clasificar: [[geometria, numeros], [areas, fracciones], medio]
+  reemplazar:
+    - ["**[FIGURA PERDIDA]**\n", ""]
+  alt: [[fig1.png, "Plano del salón (4,8 m × 3,6 m) y hoja de presupuesto de la obra por completar"]]
+  notas: "La ilustración decorativa original (la abuela) se ha perdido."
+1989-V/regional-2:
+  clasificar: [[logica, numeros], [juegos], medio]
+1989-V/regional-3:
+  clasificar: [[logica, numeros], [deduccion], medio]
+  alt: [[fig1.png, "Cuatro fichas de dominó formando un cuadrado con 11 puntos en cada lado"]]
+1989-V/regional-4:
+  clasificar: [[numeros], [ecuaciones], dificil]
+1989-V/regional-5:
+  clasificar: [[numeros, logica], [deduccion], medio]
+  reemplazar:
+    - ["&nbsp;\n\n", ""]
+  alt: [[fig1.png, "Rueda dividida en sectores con los números 1, 15, 4, 2, 9, 5, 7, 6, 15, 3, 8 y 10"]]
+1989-V/regional-6:
+  clasificar: [[geometria], [areas], medio]
+  alt: [[fig1.png, "Cuadrado con cuatro círculos iguales centrados en el punto medio de cada lado; la zona central entre ellos está coloreada"]]
+1989-V/regional-7:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["(Explica tu razonamiento)", "Los mensajes son:\n\n- Caja roja: «El dinero está en esta caja».\n- Caja verde: «El dinero no está en esta caja».\n- Caja azul: «El dinero no está en la caja roja».\n\n(Explica tu razonamiento)"]
+  alt: [[fig1.png, "Las tres cajas, roja, verde y azul, con sus mensajes"]]
+1989-V/regional-8:
+  clasificar: [[estadistica, numeros], [combinatoria], medio]
+  reemplazar:
+    - ["(8 x 8)", "(8 × 8)"]
+    - ["tablero 6 x 6", "tablero 6 × 6"]
+  alt: [[fig1.png, "Tablero de 6 × 6 cuadraditos"]]
+
+1990-VI/provincial-1:
+  clasificar: [[geometria], [areas], medio]
+  alt: [[fig1.png, "Cuadrado LMNO con los segmentos LC y MC y las diagonales; la punta de flecha está coloreada en rojo"]]
+1990-VI/provincial-2:
+  clasificar: [[logica], [deduccion], medio]
+  titulo: "Los tres hermanos increíbles"
+1990-VI/provincial-3:
+  clasificar: [[geometria, numeros], [pitagoras, ecuaciones], medio]
+1990-VI/provincial-4:
+  clasificar: [[numeros], [ecuaciones], medio]
+  alt: [[ilustracion.png, "Ilustración: el maestro"], [ilustracion2.png, "Ilustración: el vaquero"]]
+  reemplazar:
+    - ["que la siguiente\".*", "que la siguiente.*"]
+1990-VI/provincial-5:
+  clasificar: [[numeros], [fracciones], medio]
+  reemplazar:
+    - ["El café pierde un 1/5 de su peso", "El café pierde $\\frac{1}{5}$ de su peso"]
+    - ["¿A cómo venderse el kg de café tostado para ganar 1/10 del precio de compra?", "¿A cómo debe venderse el kg de café tostado para ganar $\\frac{1}{10}$ del precio de compra?"]
+1990-VI/provincial-6:
+  clasificar: [[numeros], [ecuaciones], facil]
+  alt: [[fig1.png, "Estrella de cinco puntas con números y las incógnitas x, y, z, t en los vértices e intersecciones"]]
+1990-VI/provincial-7:
+  clasificar: [[geometria], [pitagoras], dificil]
+  alt: [[fig1.png, "Dos círculos secantes, uno de radio 4 m, con 6 m entre sus centros"]]
+1990-VI/provincial-8:
+  clasificar: [[numeros], [divisibilidad], medio]
+1990-VI/regional-1:
+  clasificar: [[geometria], [areas], medio]
+  reemplazar:
+    - ["cajas circulares de $2^{½}$ m. de diámetro", "cajas circulares de $\\sqrt{2}$ m de diámetro"]
+  alt: [[fig1.png, "Caja circular con un cuadrado inscrito y cuatro círculos pequeños; el papel de embalaje está en marrón"]]
+1990-VI/regional-2:
+  clasificar: [[geometria, numeros], [areas], dificil]
+  alt: [[fig1.png, "Retícula de puntos de 6 × 6"]]
+1990-VI/regional-3:
+  clasificar: [[numeros], [cifras, ecuaciones], medio]
+1990-VI/regional-4:
+  clasificar: [[geometria, numeros], [areas], medio]
+  reemplazar:
+    - ["tiene un superficie", "tiene una superficie"]
+1990-VI/regional-5:
+  clasificar: [[logica], [juegos], medio]
+  reemplazar:
+    - ["salir!.", "salir!"]
+  alt: [[fig1.png, "Aparcamiento visto desde arriba con catorce coches numerados; el coche 1 debe salir"]]
+1990-VI/regional-6:
+  clasificar: [[logica], [deduccion], dificil]
+  reemplazar:
+    - ["«si, quiero»", "«sí, quiero»"]
+1990-VI/regional-7:
+  clasificar: [[numeros, funciones], [proporcionalidad, movimiento], dificil]
+  reemplazar:
+    - ["¿A que velocidad", "¿A qué velocidad"]
+1990-VI/regional-8:
+  clasificar: [[numeros], [ecuaciones, fracciones], medio]
+  reemplazar:
+    - ["éste me contestó", "este me contestó"]

@@ -6,13 +6,13 @@ Leyenda de la columna «Problemas localizados»: `P` = fase provincial, `R` = re
 
 | Edición | Sede | Materiales | Tipos | Problemas localizados | Avisos |
 |---|---|---|---|---|---|
-| 1985-I | Sevilla | 26 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,5,6,7,8 |  |
-| 1986-II | Málaga | 23 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7 |  |
-| 1987-III | Huelva | 22 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,4,5,6,7,8 |  |
+| 1985-I | Sevilla | 26 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
+| 1986-II | Málaga | 23 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
+| 1987-III | Huelva | 22 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
 | 1988-IV | Huelva | 26 | ggb 1, nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
 | 1989-V | Granada | 30 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
-| 1990-VI | Almería | 26 | nodo-problema 15 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7 |  |
-| 1991-VII | Cádiz | 25 | nodo-problema 15 | P 1,2,3,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
+| 1990-VI | Almería | 26 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
+| 1991-VII | Cádiz | 28 | ggb 2, nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
 | 1992-VIII | Córdoba | 23 | nodo-problema 16 | P 1,2,3,4,5,6,7,8; R 1,2,3,4,5,6,7,8 |  |
 | 1993-IX | Jaén | 20 | nodo-problema 12 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
 | 1994-X | Almería | 18 | nodo-problema 11 | P 1,2,3,4,5,6; R 1,2,3,4,5 |  |
@@ -22,16 +22,16 @@ Leyenda de la columna «Problemas localizados»: `P` = fase provincial, `R` = re
 | 1998-XIV | Cádiz | 19 | nodo-problema 12 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
 | 1999-XV | Sevilla | 20 | htm 1, nodo-problema 12 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
 | 2000-XVI | Jaén | 20 | nodo-problema 13 | P 1,2,3,4,5,6; R 1,2,3,4,5,6,7 |  |
-| 2001-XVII | Huelva | 22 | nodo-problema 12, pdf 1 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 (+ material de fase completa) |  |
+| 2001-XVII | Huelva | 23 | ggb 1, nodo-problema 12, pdf 1 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 (+ material de fase completa) |  |
 | 2002-XVIII | Córdoba | 19 | nodo-problema 12 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
-| 2003-XIX | Granada | 40 | exe 4, nodo-problema 12, pps 6, zip 10 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
+| 2003-XIX | Granada | 41 | exe 4, ggb 1, nodo-problema 12, pps 6, zip 10 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
 | 2004-XX | Almería | 46 | nodo-problema 12, pdf 2, pps 7, zip 7 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 |  |
-| 2005-XXI | Málaga | 54 | nodo-problema 12, pdf 4, pps 3, ppt 5, zip 6 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) | 1 errores |
+| 2005-XXI | Málaga | 54 | nodo-problema 12, pdf 4, pps 3, ppt 5, zip 6 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
 | 2006-XXII | Sevilla | 47 | doc 4, nodo-problema 12, pdf 6, pps 1, ppt 5, zip 5 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
-| 2007-XXIII | Cádiz | 54 | doc 5, nodo-problema 12, pdf 2, pps 8, ppt 2, zip 8 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) | 1 errores |
-| 2008-XXIV | Jaén | 72 | doc 10, nodo-problema 9, pdf 18, pps 6 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) | 2 errores |
-| 2009-XXV | Huelva | 59 | doc 5, nodo-problema 10, pps 22 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
-| 2010-XXVI | Granada | 31 | doc 6, nodo-problema 12 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
+| 2007-XXIII | Cádiz | 54 | doc 5, nodo-problema 12, pdf 2, pps 8, ppt 2, zip 8 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
+| 2008-XXIV | Jaén | 72 | doc 10, nodo-problema 12, pdf 18, pps 6 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
+| 2009-XXV | Huelva | 61 | doc 5, ggb 1, nodo-problema 12, pps 22 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
+| 2010-XXVI | Granada | 47 | doc 6, ggb 16, nodo-problema 12 | P 1,2,3,4,5,6 (+ material de fase completa); R 1,2,3,4,5,6 (+ material de fase completa) |  |
 | 2011-XXVII | Córdoba | 7 | slideshare 1 | — | **sin problemas localizados** |
 | 2012-XXVIII | Cádiz | 28 | ggb 2, html 2, pdf 5, slideshare 12 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 (+ material de fase completa) |  |
 | 2013-XXIX | Almería | 17 | slideshare 12 | P 1,2,3,4,5,6; R 1,2,3,4,5,6 |  |
@@ -58,12 +58,8 @@ Leyenda de la columna «Problemas localizados»: `P` = fase provincial, `R` = re
 - **2024-XXXIX**: de la fase regional solo hay una crónica; no se han publicado los enunciados.
 - **2026-XLI**: solo hay bases y sedes; los problemas aún no se han publicado.
 
-## Errores de descarga (8)
+## Errores de descarga (4)
 
-- `F0498` 2005-XXI: HTTP 404 — https://thales.cica.es/olimpiada2/files/images/PA1_0.gif
-- `F0624` 2007-XXIII: HTTP 404 — https://thales.cica.es/olimpiada2/files/images/escuadreitor_0.JPG
-- `F0665` 2008-XXIV: HTTP 404 — https://thales.cica.es/olimpiada2/files/images/clavexxiv_0.JPG
-- `F0676` 2008-XXIV: HTTP 404 — https://thales.cica.es/olimpiada2/files/images/xxivR3_0.JPG
 - `F0954` 2021-XXXVI: HTTP 404 — https://thales.cica.es/olimpiada2/files/Bases%2036%20OMTH.pdf
 - `F1020` 2025-XL: HTTP 404 — https://thales.cica.es/olimpiada2/?q=node/1684
 - `F1021` 2025-XL: HTTP 404 — https://thales.cica.es/olimpiada2/?q=node/1682
@@ -76,6 +72,6 @@ Leyenda de la columna «Problemas localizados»: `P` = fase provincial, `R` = re
 
 ## Totales
 
-- Registros en el inventario: 1037
-- Tamaño descargado: 563 MB
-- Por tipo: nodo-problema 337, imagen 193, pdf 112, pagina-edicion 86, pps 74, nodo 63, ppsx 56, zip 36, doc 30, slideshare 25, ppt 12, ggb 4, exe 4, html 2, externo 2, htm 1
+- Registros en el inventario: 1060
+- Tamaño descargado: 565 MB
+- Por tipo: nodo-problema 344, imagen 195, pdf 112, pagina-edicion 86, pps 74, nodo 56, ppsx 56, zip 36, doc 30, ggb 25, slideshare 25, ppt 12, exe 4, html 2, externo 2, htm 1

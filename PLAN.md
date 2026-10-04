@@ -94,7 +94,9 @@ Thales/
 │   ├── descargar.py            ← Fase 0: rastrea las dos webs y rellena inventario y raw/
 │   ├── extraer/
 │   │   ├── preparar.py         ← Fase 1: reúne texto, páginas e imágenes de cada problema en trabajo/
-│   │   └── recortar.py         ← Fase 1: recorta una figura de una fuente a 300 ppp
+│   │   ├── recortar.py         ← Fase 1: recorta una figura de una fuente a 300 ppp
+│   │   ├── desde_html.py       ← Fase 1: primera versión automática de los problemas en HTML
+│   │   └── aplicar.py          ← Fase 1-2: aplica una revisión por lotes (clasificación, correcciones)
 │   ├── clasificar.py           ← Fase 2 (pendiente): exporta/importa la tabla de revisión
 │   ├── comun.py                ← lectura de problemas y taxonomía, compartida por los demás
 │   ├── validar.py              ← comprueba metadatos, figuras referenciadas, etiquetas válidas
@@ -227,7 +229,9 @@ Las etiquetas actuales son de muestra; las instrucciones para editarlas están a
     - **PPS/PPSX/PPT/DOC:** se convierten a PDF con LibreOffice y se omiten las diapositivas que solo añaden elementos a la siguiente (animaciones).
     - **GeoGebra (`.ggb`):** se extraen sus textos (enunciado y solución) y sus imágenes.
     - **SlideShare:** las diapositivas descargadas como imagen.
-- Después Claude redacta `problemas/<edición>/<fase>-<n>/problema.md`:
+- Para los problemas en HTML de la web antigua, `desde_html.py` genera una primera versión de `problema.md`: limpia el Markdown, convierte las figuras a PNG y separa las ilustraciones (clip-art de `/files/active/` y de Matelandia). Deja bloque y dificultad vacíos para que `validar.py` marque lo pendiente.
+- La revisión de cada lote se escribe en un YAML (`fuentes/revisiones/revision-AAAA-AAAA.yaml`, versionado) y se aplica con `aplicar.py`. Con él se clasifica, se corrigen erratas, se renombran figuras, se reescriben enunciados o se crea un problema desde otro nodo. Es reaplicable: si se regenera un problema, basta con volver a aplicar el YAML. Los problemas escritos a mano se protegen de la regeneración en `fuentes/revisiones/no-regenerar.txt`.
+- En los demás formatos, Claude redacta `problemas/<edición>/<fase>-<n>/problema.md`:
   - Lee el texto extraído y las páginas como imagen.
   - Separa enunciado y solución, pasa las fórmulas a LaTeX y reconstruye los símbolos perdidos.
   - Recorta las figuras con `recortar.py`. La opción `--sin-fondo` quita el fondo de las diapositivas.

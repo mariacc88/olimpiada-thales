@@ -15,7 +15,7 @@ F0013,1985-I,regional,1,Solitario,nodo-problema,enunciado,descargado,https://tha
 F0014,1985-I,regional,1,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Regional/Solitario.JPG,fuentes/raw/ficheros/1985-I/Solitario.JPG,F0013,,,9048,
 F0015,1985-I,regional,2,Capicúas,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/60,fuentes/raw/web-antigua/node-60.html,F0001,,,21508,
 F0016,1985-I,regional,3,El viajante,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/61,fuentes/raw/web-antigua/node-61.html,F0001,numeros,,21481,
-F0017,1985-I,regional,3,¿Equivalencia geométrica?,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/62,fuentes/raw/web-antigua/node-62.html,F0001,,,21311,
+F0017,1985-I,regional,4,¿Equivalencia geométrica?,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/62,fuentes/raw/web-antigua/node-62.html,F0001,,,21311,numeración según la lista de la edición (el nodo dice regional 3)
 F0018,1985-I,regional,5,Largo camino,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/63,fuentes/raw/web-antigua/node-63.html,F0001,numeros,,21541,
 F0019,1985-I,regional,6,El remojón,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/64,fuentes/raw/web-antigua/node-64.html,F0001,,,21470,
 F0020,1985-I,regional,6,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Regional/Remojon.JPG,fuentes/raw/ficheros/1985-I/Remojon.JPG,F0019,,,11705,
@@ -44,9 +44,9 @@ F0042,1986-II,regional,5,El pozo justo,nodo-problema,enunciado,descargado,https:
 F0043,1986-II,regional,6,Cumpleaños enigmático,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/81,fuentes/raw/web-antigua/node-81.html,F0027,numeros,,21572,
 F0044,1986-II,regional,7,¡Cuidado que arde!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/82,fuentes/raw/web-antigua/node-82.html,F0027,,,21439,
 F0045,1986-II,regional,7,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Regional/Arde.JPG,fuentes/raw/ficheros/1986-II/Arde.JPG,F0044,,,3926,
-F0046,1986-II,regional,2,El rebaño,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/83,fuentes/raw/web-antigua/node-83.html,F0027,numeros,,22463,
-F0047,1986-II,regional,2,,imagen,figura,descargado,https://thales.cica.es/olimpiada/Matelandia/PepitoPastor.gif,fuentes/raw/ficheros/1986-II/PepitoPastor.gif,F0046,,,3683,
-F0048,1986-II,regional,2,,imagen,figura,descargado,https://thales.cica.es/olimpiada/Matelandia/oveja.gif,fuentes/raw/ficheros/1986-II/oveja.gif,F0046,,,7152,
+F0046,1986-II,regional,8,El rebaño,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/83,fuentes/raw/web-antigua/node-83.html,F0027,numeros,,22463,numeración según la lista de la edición (el nodo dice regional 2)
+F0047,1986-II,regional,8,,imagen,figura,descargado,https://thales.cica.es/olimpiada/Matelandia/PepitoPastor.gif,fuentes/raw/ficheros/1986-II/PepitoPastor.gif,F0046,,,3683,
+F0048,1986-II,regional,8,,imagen,figura,descargado,https://thales.cica.es/olimpiada/Matelandia/oveja.gif,fuentes/raw/ficheros/1986-II/oveja.gif,F0046,,,7152,
 F0049,1986-II,,,II Olimpiada Matemática Thales (1986),pagina-edicion,,descargado,https://thales.cica.es/olimpiada2/?q=node/46,fuentes/raw/web-antigua/node-46.html,,,,24003,
 F0050,1987-III,,,"III Olimpiada Matemática Thales (Matalascañas, 1987)",pagina-edicion,,descargado,https://olimpiada.saemthales.es/node/44,fuentes/raw/web-actual/node-44.html,,,,46704,
 F0051,1987-III,provincial,1,Trasiego ferroviario,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/84,fuentes/raw/web-antigua/node-84.html,F0050,numeros,,21711,
@@ -56,13 +56,13 @@ F0054,1987-III,provincial,4,Enigma numérico,nodo-problema,enunciado,descargado,
 F0055,1987-III,provincial,4,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/p4.JPG,fuentes/raw/ficheros/1987-III/p4.JPG,F0054,,,9424,
 F0056,1987-III,provincial,5,Mente sana in corpore sano,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/88,fuentes/raw/web-antigua/node-88.html,F0050,estadistica,,22247,
 F0057,1987-III,provincial,6,Dimensionando,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/89,fuentes/raw/web-antigua/node-89.html,F0050,,,21446,
-F0058,1987-III,provincial,6,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/P6.JPG,fuentes/raw/ficheros/1987-III/P6.JPG,F0057,,,3825,recuperado de archive.org: https://web.archive.org/web/20091221205942id_/http://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/P6.JPG
+F0058,1987-III,provincial,6,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/P6.JPG,fuentes/raw/ficheros/1987-III/P6.JPG,F0057,,,3825,
 F0059,1987-III,provincial,7,Presupuesto ajustado,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/90,fuentes/raw/web-antigua/node-90.html,F0050,,dificil,21768,
-F0060,1987-III,provincial,7,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/P7.JPG,fuentes/raw/ficheros/1987-III/P7.JPG,F0059,,,4705,recuperado de archive.org: https://web.archive.org/web/20091221205738id_/http://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/P7.JPG
+F0060,1987-III,provincial,7,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IIIOlimpiada/P7.JPG,fuentes/raw/ficheros/1987-III/P7.JPG,F0059,,,4705,
 F0061,1987-III,provincial,8,¿Juegas?,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/91,fuentes/raw/web-antigua/node-91.html,F0050,numeros,,21656,
 F0062,1987-III,regional,1,Agua que no has de beber no has de dejar correr,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/92,fuentes/raw/web-antigua/node-92.html,F0050,numeros,,21609,
 F0063,1987-III,regional,2,¡Qué mareo!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/93,fuentes/raw/web-antigua/node-93.html,F0050,,,21272,
-F0064,1987-III,regional,5,Coincidencias,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/94,fuentes/raw/web-antigua/node-94.html,F0050,numeros,,21426,
+F0064,1987-III,regional,3,Coincidencias,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/94,fuentes/raw/web-antigua/node-94.html,F0050,numeros,,21426,numeración según la lista de la edición (el nodo dice regional 5)
 F0065,1987-III,regional,4,Cada mochuelo a su olivo,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/95,fuentes/raw/web-antigua/node-95.html,F0050,,dificil,21471,
 F0066,1987-III,regional,5,Cambalaches,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/96,fuentes/raw/web-antigua/node-96.html,F0050,numeros,,21612,
 F0067,1987-III,regional,6,Distribuyendo,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/97,fuentes/raw/web-antigua/node-97.html,F0050,,,21289,
@@ -73,10 +73,10 @@ F0071,1987-III,,,"III Olimpiada Matemática Thales (Matalascañas, 1987)",pagina
 F0072,1988-IV,,,"IV Olimpiada Matemática Thales (Matalascañas, 1988)",pagina-edicion,,descargado,https://olimpiada.saemthales.es/node/45,fuentes/raw/web-actual/node-45.html,,,,46541,
 F0073,1988-IV,provincial,1,En busca del número perdido,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/100,fuentes/raw/web-antigua/node-100.html,F0072,numeros,,21968,
 F0074,1988-IV,provincial,2,¡Vamos al agua!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/101,fuentes/raw/web-antigua/node-101.html,F0072,,,21579,
-F0075,1988-IV,provincial,2,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IVOlimpiada/P2.JPG,fuentes/raw/ficheros/1988-IV/P2.JPG,F0074,,,21344,recuperado de archive.org: https://web.archive.org/web/20091222061100id_/http://thales.cica.es/sevilla/OlimpiadasESO/IVOlimpiada/P2.JPG
+F0075,1988-IV,provincial,2,,imagen,figura,descargado,https://thales.cica.es/sevilla/OlimpiadasESO/IVOlimpiada/P2.JPG,fuentes/raw/ficheros/1988-IV/P2.JPG,F0074,,,21344,
 F0076,1988-IV,provincial,3,¡Qué rollo!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/102,fuentes/raw/web-antigua/node-102.html,F0072,,,23083,
 F0077,1988-IV,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/modules/file/icons/application-octet-stream.png,fuentes/raw/ficheros/1988-IV/application-octet-stream.png,F0076,,,189,
-F0078,1988-IV,provincial,3,43p.ggb,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/43p.ggb,fuentes/raw/ficheros/1988-IV/43p.ggb,F0076,,,19242,
+F0078,1988-IV,provincial,3,¡Qué rollo!,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/43p.ggb,fuentes/raw/ficheros/1988-IV/43p.ggb,F0076,,,19242,
 F0079,1988-IV,provincial,4,Paseos en tren,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/103,fuentes/raw/web-antigua/node-103.html,F0072,,,21795,
 F0080,1988-IV,provincial,4,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Problemas/tren.JPG,fuentes/raw/ficheros/1988-IV/tren.JPG,F0079,,,7459,
 F0081,1988-IV,provincial,5,Simplificando,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/104,fuentes/raw/web-antigua/node-104.html,F0072,numeros,,21590,
@@ -150,13 +150,13 @@ F0148,1990-VI,regional,5,Maniobras,nodo-problema,enunciado,descargado,https://th
 F0149,1990-VI,regional,5,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Regional/maniobras.JPG,fuentes/raw/ficheros/1990-VI/maniobras.JPG,F0148,,,35187,
 F0150,1990-VI,regional,6,¡Vamos de boda!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/146,fuentes/raw/web-antigua/node-146.html,F0128,,,22251,
 F0151,1990-VI,regional,7,Un problema muy espacial,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/147,fuentes/raw/web-antigua/node-147.html,F0128,,,21624,
-F0152,1990-VI,,,VI OMT Regional 8: What time is it?,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/148,fuentes/raw/web-antigua/node-148.html,F0128,,,21234,
+F0152,1990-VI,regional,8,What time is it?,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/148,fuentes/raw/web-antigua/node-148.html,F0128,,,21234,fase y número según la lista de la edición (el título del nodo no los indica)
 F0153,1990-VI,,,"VI Olimpiada Matemática Thales (Carbonera, 1990)",pagina-edicion,,descargado,https://thales.cica.es/olimpiada2/?q=node/42,fuentes/raw/web-antigua/node-42.html,,,,23630,
 F0154,1991-VII,,,VII Olimpiada Matemática Thales (1991),pagina-edicion,,descargado,https://olimpiada.saemthales.es/node/39,fuentes/raw/web-actual/node-39.html,,,,46759,
 F0155,1991-VII,provincial,1,Un alumno muy perspicaz,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/149,fuentes/raw/web-antigua/node-149.html,F0154,numeros,,23271,
-F0156,1991-VII,,,¡Vaya cuadrado!,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/150,fuentes/raw/web-antigua/node-150.html,F0154,,,21523,
-F0157,1991-VII,provincial,2,¿Cociente o resto?,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/151,fuentes/raw/web-antigua/node-151.html,F0154,numeros,,21710,
-F0158,1991-VII,provincial,3,¡A plaza fija!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/152,fuentes/raw/web-antigua/node-152.html,F0154,,,21425,
+F0156,1991-VII,provincial,2,¡Vaya cuadrado!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/150,fuentes/raw/web-antigua/node-150.html,F0154,,,21523,fase y número según la lista de la edición (el título del nodo no los indica)
+F0157,1991-VII,provincial,3,¿Cociente o resto?,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/151,fuentes/raw/web-antigua/node-151.html,F0154,numeros,,21710,numeración según la lista de la edición (el nodo dice provincial 2)
+F0158,1991-VII,provincial,4,¡A plaza fija!,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/152,fuentes/raw/web-antigua/node-152.html,F0154,,,21425,numeración según la lista de la edición (el nodo dice provincial 3)
 F0159,1991-VII,provincial,5,Alumn@s,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/153,fuentes/raw/web-antigua/node-153.html,F0154,,,21364,
 F0160,1991-VII,provincial,6,Lápices,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/154,fuentes/raw/web-antigua/node-154.html,F0154,funciones,,22159,
 F0161,1991-VII,provincial,6,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Problemas/Lapices.JPG,fuentes/raw/ficheros/1991-VII/Lapices.JPG,F0160,,,12568,
@@ -495,8 +495,8 @@ F0494,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/oli
 F0495,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/paco%20anillo%20jaenEjerc3(pag.1).preview.gif,fuentes/raw/ficheros/2005-XXI/paco anillo jaenEjerc3(pag.1).preview.gif,F0490,,,71807,
 F0496,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/paco%20anillo%20jaenEjerc3(pag.2).preview.gif,fuentes/raw/ficheros/2005-XXI/paco anillo jaenEjerc3(pag.2).preview.gif,F0490,,,54853,
 F0497,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/paco%20anillo%20jaenEjerc3(pag.3).preview.gif,fuentes/raw/ficheros/2005-XXI/paco anillo jaenEjerc3(pag.3).preview.gif,F0490,,,67384,
-F0498,2005-XXI,provincial,3,,imagen,figura,error,https://thales.cica.es/olimpiada2/files/images/PA1_0.gif,,F0490,,,,HTTP 404
-F0499,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/PA2_0.gif,fuentes/raw/ficheros/2005-XXI/PA2_0.gif,F0490,,,41188,recuperado de archive.org: https://web.archive.org/web/20100330225746id_/http://thales.cica.es/olimpiada2/files/images/PA2_0.gif
+F0498,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/PA1_0.gif,fuentes/raw/ficheros/2005-XXI/PA1_0.gif,F0490,,,40711,
+F0499,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/PA2_0.gif,fuentes/raw/ficheros/2005-XXI/PA2_0.gif,F0490,,,41188,
 F0500,2005-XXI,provincial,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/PA3_0.gif,fuentes/raw/ficheros/2005-XXI/PA3_0.gif,F0490,,,31176,
 F0501,2005-XXI,provincial,4,Triángulos misteriosos,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/336,fuentes/raw/web-antigua/node-336.html,F0481,,,24053,
 F0502,2005-XXI,provincial,4,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/PacoAnilloGranada.preview.JPG,fuentes/raw/ficheros/2005-XXI/PacoAnilloGranada.preview.JPG,F0501,,,49095,
@@ -621,7 +621,7 @@ F0620,2007-XXIII,regional,4,¡Vaya partidazo de Pau Porciento!,nodo-problema,enu
 F0621,2007-XXIII,regional,,Resolución en PowerPoint,ppt,solucion,descargado,https://thales.cica.es/olimpiada2/files/23R_Pau_Porciento.ppt,fuentes/raw/ficheros/2007-XXIII/23R_Pau_Porciento.ppt,F0582,,,528384,
 F0622,2007-XXIII,regional,5,El informático despistado,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1085,fuentes/raw/web-antigua/node-1085.html,F0582,,,23347,
 F0623,2007-XXIII,regional,6,Escuadreitor ataca de nuevo,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1086,fuentes/raw/web-antigua/node-1086.html,F0582,,,22624,
-F0624,2007-XXIII,regional,6,,imagen,figura,error,https://thales.cica.es/olimpiada2/files/images/escuadreitor_0.JPG,,F0623,,,,HTTP 404
+F0624,2007-XXIII,regional,6,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/escuadreitor_0.JPG,fuentes/raw/ficheros/2007-XXIII/escuadreitor_0.JPG,F0623,,,13264,
 F0625,2007-XXIII,regional,6,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/PremioXXIIIRegional.preview.JPG,fuentes/raw/ficheros/2007-XXIII/PremioXXIIIRegional.preview.JPG,F0623,,,30657,
 F0626,2007-XXIII,regional,,Carpetilla con los seis problemas,doc,?,descargado,https://thales.cica.es/olimpiada2/files/HojasIndividualesFaseRegional.doc,fuentes/raw/ficheros/2007-XXIII/HojasIndividualesFaseRegional.doc,F0582,,,203776,
 F0627,2007-XXIII,regional,,Prueba por equipos en San Fernando,pdf,?,descargado,https://thales.cica.es/olimpiada2/files/XXIIOMTFREquipos.pdf,fuentes/raw/ficheros/2007-XXIII/XXIIOMTFREquipos.pdf,F0582,,,1452136,
@@ -659,10 +659,10 @@ F0658,2008-XXIV,provincial,4,,imagen,figura,descargado,https://thales.cica.es/ol
 F0659,2008-XXIV,provincial,4,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/VIPAAlmeria2.preview.jpg,fuentes/raw/ficheros/2008-XXIV/VIPAAlmeria2.preview.jpg,F0654,,,14915,
 F0660,2008-XXIV,provincial,5,Dianas poligonales,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1164,fuentes/raw/web-antigua/node-1164.html,F0634,estadistica,facil,26608,
 F0661,2008-XXIV,provincial,5,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/Dianasxxiv_0.JPG,fuentes/raw/ficheros/2008-XXIV/Dianasxxiv_0.JPG,F0660,,,9332,
-F0662,2008-XXIV,provincial,5,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/Dianasxxivb_0.JPG,fuentes/raw/ficheros/2008-XXIV/Dianasxxivb_0.JPG,F0660,,,12652,recuperado de archive.org: https://web.archive.org/web/20100330200407id_/http://thales.cica.es/olimpiada2/files/images/Dianasxxivb_0.JPG
+F0662,2008-XXIV,provincial,5,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/Dianasxxivb_0.JPG,fuentes/raw/ficheros/2008-XXIV/Dianasxxivb_0.JPG,F0660,,,12652,
 F0663,2008-XXIV,provincial,5,dianas.pps,pps,?,descargado,https://thales.cica.es/olimpiada2/files/dianas.pps,fuentes/raw/ficheros/2008-XXIV/dianas.pps,F0660,,,509440,
 F0664,2008-XXIV,provincial,6,La clave,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1167,fuentes/raw/web-antigua/node-1167.html,F0634,logica,facil,24844,
-F0665,2008-XXIV,provincial,6,,imagen,figura,error,https://thales.cica.es/olimpiada2/files/images/clavexxiv_0.JPG,,F0664,,,,HTTP 404
+F0665,2008-XXIV,provincial,6,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/clavexxiv_0.JPG,fuentes/raw/ficheros/2008-XXIV/clavexxiv_0.JPG,F0664,,,5868,
 F0666,2008-XXIV,provincial,6,laclave_2.pps,pps,?,descargado,https://thales.cica.es/olimpiada2/files/laclave_2.pps,fuentes/raw/ficheros/2008-XXIV/laclave_2.pps,F0664,,,343040,
 F0667,2008-XXIV,,,XXIV OMT: Fase Regional: Programa.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1170,fuentes/raw/web-antigua/node-1170.html,F0634,,,41354,
 F0668,2008-XXIV,,,XXIV OMT: Notas de prensa.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1266,fuentes/raw/web-antigua/node-1266.html,F0634,,,22480,
@@ -670,12 +670,12 @@ F0669,2008-XXIV,,,Fase Regional,nodo,otro,descargado,https://thales.cica.es/olim
 F0670,2008-XXIV,,,XXIV OMT: Ganadores Regionales.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1267,fuentes/raw/web-antigua/node-1267.html,F0634,,,23225,
 F0671,2008-XXIV,,,XXIV OMT: Discurso de Clausura.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1381,fuentes/raw/web-antigua/node-1381.html,F0634,,,31028,
 F0672,2008-XXIV,regional,1,La bandera,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1274,fuentes/raw/web-antigua/node-1274.html,F0634,logica estadistica,dificil,23242,
-F0673,2008-XXIV,regional,1,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/xxivR1_0.JPG,fuentes/raw/ficheros/2008-XXIV/xxivR1_0.JPG,F0672,,,2085,recuperado de archive.org: https://web.archive.org/web/20100330200435id_/http://thales.cica.es/olimpiada2/files/images/xxivR1_0.JPG
-F0674,2008-XXIV,,,XXIV OMT: Fase Regional 2: Supervivientes.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1270,fuentes/raw/web-antigua/node-1270.html,F0634,,,23886,
+F0673,2008-XXIV,regional,1,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/xxivR1_0.JPG,fuentes/raw/ficheros/2008-XXIV/xxivR1_0.JPG,F0672,,,2085,
+F0674,2008-XXIV,regional,2,Supervivientes.,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1270,fuentes/raw/web-antigua/node-1270.html,F0634,,facil,23886,fase y número según la lista de la edición (el título del nodo no los indica)
 F0675,2008-XXIV,regional,3,Menudo reto,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1276,fuentes/raw/web-antigua/node-1276.html,F0634,numeros logica,medio,22429,
-F0676,2008-XXIV,regional,3,,imagen,figura,error,https://thales.cica.es/olimpiada2/files/images/xxivR3_0.JPG,,F0675,,,,HTTP 404
-F0677,2008-XXIV,,,XXIV OMT: Fase Regional 4: Castillo fractal de naipes.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1271,fuentes/raw/web-antigua/node-1271.html,F0634,,,23674,
-F0678,2008-XXIV,,,XXIV OMT: Fase Regional 5: Pueblo de fiesta.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1272,fuentes/raw/web-antigua/node-1272.html,F0634,,,22414,
+F0676,2008-XXIV,regional,3,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/xxivR3_0.JPG,fuentes/raw/ficheros/2008-XXIV/xxivR3_0.JPG,F0675,,,33036,
+F0677,2008-XXIV,regional,4,Castillo fractal de naipes.,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1271,fuentes/raw/web-antigua/node-1271.html,F0634,,medio,23674,fase y número según la lista de la edición (el título del nodo no los indica)
+F0678,2008-XXIV,regional,5,Pueblo de fiesta.,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1272,fuentes/raw/web-antigua/node-1272.html,F0634,geometria numeros,dificil,22414,fase y número según la lista de la edición (el título del nodo no los indica)
 F0679,2008-XXIV,regional,6,Ahorremos agua,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1278,fuentes/raw/web-antigua/node-1278.html,F0634,numeros logica,dificil,24013,
 F0680,2008-XXIV,regional,6,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/xxivR6_0.JPG,fuentes/raw/ficheros/2008-XXIV/xxivR6_0.JPG,F0679,,,34696,
 F0681,2008-XXIV,regional,1,Problema 1.,pdf,?,descargado,https://thales.cica.es/olimpiada2/files/PRUEBA 1.pdf,fuentes/raw/ficheros/2008-XXIV/PRUEBA 1.pdf,F0634,,,440403,
@@ -737,9 +737,9 @@ F0739,2009-XXV,,,XXV OMT: Ganadores Provinciales.,nodo,,descargado,https://thale
 F0740,2009-XXV,,,XXV OMT: Lugares de entregas de premios.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1500,fuentes/raw/web-antigua/node-1500.html,F0706,,,219258,
 F0741,2009-XXV,,,XXV OMT: Notas de prensa.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1389,fuentes/raw/web-antigua/node-1389.html,F0706,,,22644,
 F0742,2009-XXV,regional,,Hojas individuales,doc,?,descargado,https://thales.cica.es/olimpiada2/files/HojasIndividualesFaseregional_0.doc,fuentes/raw/ficheros/2009-XXV/HojasIndividualesFaseregional_0.doc,F0706,,,232448,
-F0743,2009-XXV,,,XXV OMT Regional: Juguemos al waterpolo.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1510,fuentes/raw/web-antigua/node-1510.html,F0706,,,28177,
+F0743,2009-XXV,regional,1,Juguemos al waterpolo.,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1510,fuentes/raw/web-antigua/node-1510.html,F0706,,,28177,fase y número según la lista de la edición (el título del nodo no los indica)
 F0744,2009-XXV,regional,1,Presentación en PowerPoint),pps,?,descargado,https://thales.cica.es/olimpiada2/files/251r.pps,fuentes/raw/ficheros/2009-XXV/251r.pps,F0706,,,1597952,
-F0745,2009-XXV,,,XXV OMT: Fase Regional 2: Plan Veraniego.,nodo,,descargado,https://thales.cica.es/olimpiada2/?q=node/1512,fuentes/raw/web-antigua/node-1512.html,F0706,,,24967,
+F0745,2009-XXV,regional,2,Plan veraniego.,nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1512,fuentes/raw/web-antigua/node-1512.html,F0706,,facil,24967,fase y número según la lista de la edición (el título del nodo no los indica)
 F0746,2009-XXV,regional,2,(,pps,?,descargado,https://thales.cica.es/olimpiada2/files/252r.pps,fuentes/raw/ficheros/2009-XXV/252r.pps,F0706,,,651264,
 F0747,2009-XXV,regional,2,Presentación en PowerPoint),pps,?,descargado,https://olimpiada.saemthales.es/files/252r.pps,fuentes/raw/ficheros/2009-XXV/252r.pps,F0706,,,651264,
 F0748,2009-XXV,regional,3,"Eulerina, recaudadora de impuestos",nodo-problema,enunciado,descargado,https://thales.cica.es/olimpiada2/?q=node/1513,fuentes/raw/web-antigua/node-1513.html,F0706,,,23954,
@@ -1036,3 +1036,26 @@ F1066,2013-XXIX,regional,3,El circo,slideshare,?,descargado,https://www.slidesha
 F1067,2013-XXIX,regional,4,Números triangulares,slideshare,?,descargado,https://www.slideshare.net/slideshow/embed_code/21988388,fuentes/raw/ficheros/2013-XXIX/slideshare-presentacionnotriangulares-130527033413-phpapp02,F0838,,,528200,6 diapositivas
 F1068,2013-XXIX,regional,5,Un extraño algortimo,slideshare,?,descargado,https://www.slideshare.net/slideshow/embed_code/21988407,fuentes/raw/ficheros/2013-XXIX/slideshare-presentacinalgoritmo-130527033444-phpapp02,F0838,,,588706,7 diapositivas
 F1069,2013-XXIX,regional,6,Fractales,slideshare,?,descargado,https://www.slideshare.net/slideshow/embed_code/21988436,fuentes/raw/ficheros/2013-XXIX/slideshare-presentacinfractales-130527033540-phpapp01,F0838,,,669636,7 diapositivas
+F1070,1991-VII,regional,8,Equiáreas,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/78r.ggb,fuentes/raw/ficheros/1991-VII/78r.ggb,F0176,,,241213,
+F1071,1991-VII,regional,8,Equiáreas,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/Alumno.ggb,fuentes/raw/ficheros/1991-VII/Alumno.ggb,F0176,,,1654,
+F1072,2001-XVII,provincial,5,"El próximo, un bajo",ggb,?,descargado,https://thales.cica.es/olimpiada2/files/175p.ggb,fuentes/raw/ficheros/2001-XVII/175p.ggb,F0362,,,8472,
+F1073,2003-XIX,provincial,1,Dobleces,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/191p.ggb,fuentes/raw/ficheros/2003-XIX/191p.ggb,F0396,,,244986,
+F1074,2009-XXV,provincial,4,El Sr. Cuesta,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/254p.ggb,fuentes/raw/ficheros/2009-XXV/254p.ggb,F0726,,,68707,
+F1075,2010-XXVI,provincial,1,El topógrafo,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/261p.ggb,fuentes/raw/ficheros/2010-XXVI/261p.ggb,F0775,,,50062,
+F1076,2010-XXVI,provincial,1,El topógrafo,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/261pventana.ggb,fuentes/raw/ficheros/2010-XXVI/261pventana.ggb,F0775,,,7778,
+F1077,2010-XXVI,provincial,2,Un topillo muy tragón,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/262p.ggb,fuentes/raw/ficheros/2010-XXVI/262p.ggb,F0776,,,95442,
+F1078,2010-XXVI,provincial,3,El número secreto,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/263p.ggb,fuentes/raw/ficheros/2010-XXVI/263p.ggb,F0779,,,33488,
+F1079,2010-XXVI,provincial,4,El dato desconocido,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/264p.ggb,fuentes/raw/ficheros/2010-XXVI/264p.ggb,F0782,,,99666,
+F1080,2010-XXVI,provincial,5,Canalizaciones,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/265p.ggb,fuentes/raw/ficheros/2010-XXVI/265p.ggb,F0783,,,112013,
+F1081,2010-XXVI,provincial,5,Canalizaciones,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/sinelipses.ggb,fuentes/raw/ficheros/2010-XXVI/sinelipses.ggb,F0783,,,28561,
+F1082,2010-XXVI,provincial,6,Deliciosos caramelos,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/266p.ggb,fuentes/raw/ficheros/2010-XXVI/266p.ggb,F0784,,,33165,
+F1083,2010-XXVI,regional,1,Granada,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/261r.ggb,fuentes/raw/ficheros/2010-XXVI/261r.ggb,F0791,,,232842,
+F1084,2010-XXVI,regional,1,Granada,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/261r_alumno.ggb,fuentes/raw/ficheros/2010-XXVI/261r_alumno.ggb,F0791,,,1627,
+F1085,2010-XXVI,regional,2,Dulce Miel,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/262r.ggb,fuentes/raw/ficheros/2010-XXVI/262r.ggb,F0792,,,29443,
+F1086,2010-XXVI,regional,3,La piscina para pequeñ@s,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/263r.ggb,fuentes/raw/ficheros/2010-XXVI/263r.ggb,F0793,,,24683,
+F1087,2010-XXVI,regional,4,La chimenea,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/264r.ggb,fuentes/raw/ficheros/2010-XXVI/264r.ggb,F0794,,,29084,
+F1088,2010-XXVI,regional,5,Mi amigo Eulogio,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/265r.ggb,fuentes/raw/ficheros/2010-XXVI/265r.ggb,F0795,,,24397,
+F1089,2010-XXVI,regional,6,Las hermanas Pascalinas,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/266r.ggb,fuentes/raw/ficheros/2010-XXVI/266r.ggb,F0796,,,165930,
+F1090,2010-XXVI,regional,6,Las hermanas Pascalinas,ggb,?,descargado,https://thales.cica.es/olimpiada2/files/266r_alumno.ggb,fuentes/raw/ficheros/2010-XXVI/266r_alumno.ggb,F0796,,,5441,
+F1091,1991-VII,provincial,2,,imagen,figura,descargado,https://thales.cica.es/olimpiada/EdicionesAnteriores/Problemas/CuadradoVII.JPG,fuentes/raw/ficheros/1991-VII/CuadradoVII.JPG,F0156,,,4779,
+F1092,2009-XXV,regional,2,,imagen,figura,descargado,https://thales.cica.es/olimpiada2/files/images/Plan_0.jpg,fuentes/raw/ficheros/2009-XXV/Plan_0.jpg,F0745,,,26523,recuperado de archive.org: https://web.archive.org/web/20100330233329id_/http://thales.cica.es/olimpiada2/files/images/Plan_0.jpg

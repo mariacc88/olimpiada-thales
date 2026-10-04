@@ -1,0 +1,146 @@
+1994-X/provincial-1:
+  clasificar: [[numeros], [ecuaciones], facil]
+1994-X/provincial-2:
+  clasificar: [[geometria], [areas], medio]
+  alt: [[fig1.png, "Tres círculos iguales tangentes dos a dos; la región entre ellos está en rojo"]]
+1994-X/provincial-3:
+  clasificar: [[numeros, logica], [patrones], medio]
+  reemplazar:
+    - ["torres como ésta pero de 7, 8, 9 ó 10 cubos", "torres como esta pero de 7, 8, 9 o 10 cubos"]
+  alt: [[fig1.png, "Fotografía de una torre escalonada de cubos de madera de 6 cubos de altura"]]
+1994-X/provincial-4:
+  clasificar: [[geometria, numeros], [areas, fracciones], medio]
+  alt: [[fig1.png, "Triángulo equilátero ABC con triángulos naranjas inscritos sucesivamente uniendo puntos medios"]]
+1994-X/provincial-5:
+  clasificar: [[logica, numeros], [deduccion, ecuaciones], medio]
+1994-X/provincial-6:
+  clasificar: [[funciones], [graficas, movimiento], facil]
+  reemplazar:
+    - ["empiezo a peladear más deprisa", "empiezo a pedalear más deprisa"]
+    - ["me dí cuenta", "me di cuenta"]
+    - ["el chandal", "el chándal"]
+    - ["tuve que peladear muy deprisa", "tuve que pedalear muy deprisa"]
+  alt: [[fig1.png, "Cuatro gráficas espacio–tiempo de los viajes al instituto"]]
+1994-X/regional-1:
+  clasificar: [[geometria, logica, numeros], [areas, deduccion], dificil]
+  reemplazar:
+    - ["los números 0,1,2,3,4,y 5", "los números 0, 1, 2, 3, 4 y 5"]
+  alt: [[fig1.png, "Triángulo dividido en cuatro triángulos con seis círculos rojos en los vértices; el triángulo central es violeta y los otros azules"]]
+1994-X/regional-2:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["y la Señora de Martínez", "y la señora de Martínez"]
+1994-X/regional-3:
+  clasificar: [[numeros], [proporcionalidad], facil]
+1994-X/regional-4:
+  clasificar: [[numeros], [divisibilidad], facil]
+1994-X/regional-5:
+  clasificar: [[funciones], [graficas], medio]
+  reemplazar:
+    - ["cómo varía el número de bebidas que hay en la máquina desde las 10 am hasta las 1 de la madrugada", "cómo varía el número de bolas que hay en la máquina desde las 10 am hasta la 1 de la madrugada."]
+  notas: "En la web dice «número de bebidas»; por el contexto son las bolas de chicle."
+
+1995-XI/provincial-1:
+  clasificar: [[numeros], [cifras], medio]
+  enunciado: |
+    ¿Qué signos de operación he de intercalar entre las cifras para obtener en cada caso 1?
+
+    - 1 □ 2 = 1
+    - 1 □ 2 □ 3 = 1
+    - 1 □ 2 □ 3 □ 4 = 1
+    - 1 □ 2 □ 3 □ 4 □ 5 = 1
+    - 1 □ 2 □ 3 □ 4 □ 5 □ 6 = 1
+    - 1 □ 2 □ 3 □ 4 □ 5 □ 6 □ 7 = 1
+    - 1 □ 2 □ 3 □ 4 □ 5 □ 6 □ 7 □ 8 = 1
+    - 1 □ 2 □ 3 □ 4 □ 5 □ 6 □ 7 □ 8 □ 9 = 1
+1995-XI/provincial-2:
+  clasificar: [[funciones, geometria], [graficas, areas], medio]
+  enunciado: |
+    Calcula la superficie de la figura geométrica formada entre las gráficas de las funciones $y = x + 2$ e $y = x + 5$ y los ejes de coordenadas.
+1995-XI/provincial-3:
+  clasificar: [[geometria], [pitagoras], medio]
+  alt: [[fig1.png, "Planta del trastero (1,5 m de largo, 85 cm de ancho y puerta de 65 cm) con el mueble"]]
+1995-XI/provincial-4:
+  clasificar: [[funciones, logica], [movimiento, deduccion], dificil]
+1995-XI/provincial-5:
+  clasificar: [[geometria], [pitagoras, angulos], medio]
+1995-XI/provincial-6:
+  clasificar: [[funciones], [graficas], facil]
+  alt: [[fig1.png, "Cinco gráficas del efecto de cada producto a lo largo de las tres fases del tratamiento"]]
+  notas: "En la web las tres fases se llaman «Fase de choque»; por la descripción, la segunda y la tercera serían otras fases (p. ej. de mantenimiento)."
+1995-XI/regional-1:
+  clasificar: [[geometria], [areas], dificil]
+  reemplazar:
+    - ["rectangular de 16 x 20 m., cuyos", "rectangular de 16 × 20 m, cuyos"]
+    - ["El centro de las piscina", "El centro de la piscina"]
+  alt: [[fig1.png, "Terreno cuadrado orientado NO-SE con la piscina rectangular de 16 × 20 m en el centro, árboles y cuatro triángulos de césped"]]
+1995-XI/regional-2:
+  clasificar: [[logica, numeros], [deduccion], medio]
+  reemplazar:
+    - ["y éste le contestó", "y este le contestó"]
+1995-XI/regional-3:
+  clasificar: [[geometria, numeros], [cuerpos, proporcionalidad], medio]
+1995-XI/regional-4:
+  clasificar: [[geometria, numeros], [areas, proporcionalidad], dificil]
+  reemplazar:
+    - ["Esta planti-lla", "Esta plantilla"]
+    - ["a) Cómo se podría", "a) ¿Cómo se podría"]
+  alt: [[fig1.png, "Tabla de madera con cuatro agujeros circulares para 1, 2, 3 y 4 raciones"]]
+1995-XI/regional-5:
+  clasificar: [[funciones, estadistica], [graficas, estadistica-descriptiva], facil]
+  reemplazar:
+    - ["Obsérvalas y dí cuál de ellas ha obtenido mayores y menores beneficios.Razona las respuestas.", "Obsérvalas y di cuál de ellas ha obtenido mayores y menores beneficios. Razona las respuestas."]
+    - ["La ganancia de tres empresas A, B y C vienen representadas", "Las ganancias de tres empresas A, B y C vienen representadas"]
+  alt: [[fig1.png, "Gráficas de beneficios mensuales de las empresas A, B y C, con escalas verticales distintas"]]
+1995-XI/regional-6:
+  clasificar: [[geometria, numeros], [areas, fracciones, proporcionalidad], dificil]
+  reemplazar:
+    - ["planchas metálizas", "planchas metálicas"]
+    - ["2.500 ptas", "2500 ptas"]
+    - ["100.000 ptas", "100 000 ptas"]
+    - ["15.000 ptas", "15 000 ptas"]
+    - ["y es sistema de sujección 7 ptas", "y el sistema de sujeción 7 ptas"]
+    - ["de 5.000, 10.000 ó 100.000 pims", "de 5000, 10 000 o 100 000 pims"]
+    - ["La 1ª tirada fue de 10.000.", "La 1.ª tirada fue de 10 000."]
+  alt: [[fig1.png, "Silueta del pin: un semicírculo de 3 cm de diámetro y 1,5 cm de alto"]]
+
+1996-XII/provincial-1:
+  clasificar: [[numeros, geometria], [areas, proporcionalidad], facil]
+  reemplazar:
+    - ["¿Y si el cuadradado estuviese", "¿Y si el cuadrado estuviese"]
+1996-XII/provincial-2:
+  clasificar: [[numeros], [ecuaciones], facil]
+1996-XII/provincial-3:
+  clasificar: [[geometria], [areas], dificil]
+1996-XII/provincial-4:
+  clasificar: [[numeros], [divisibilidad], facil]
+1996-XII/provincial-5:
+  clasificar: [[numeros], [proporcionalidad], medio]
+1996-XII/provincial-6:
+  clasificar: [[logica, numeros], [juegos, divisibilidad], dificil]
+1996-XII/regional-1:
+  clasificar: [[estadistica, logica, numeros], [combinatoria, patrones], medio]
+  reemplazar:
+    - ["[¡Ten cuidado!Hay más de 12.Calcula el número de cuadra-dos de lado 1, 2, 3 ]", "(¡Ten cuidado! Hay más de 12. Calcula el número de cuadrados de lado 1, 2 y 3.)"]
+    - ["una cuadrícula de x cuadrados de largo", "una cuadrícula de $x$ cuadrados de largo"]
+1996-XII/regional-2:
+  clasificar: [[logica], [deduccion], dificil]
+  reemplazar:
+    - ["cuando ésta estudiaba", "cuando esta estudiaba"]
+1996-XII/regional-3:
+  clasificar: [[geometria], [areas], dificil]
+  reemplazar:
+    - ["mide 140 m2.", "mide 140 m²."]
+  alt: [[fig1.png, "Triángulo T (en rojo) y el hexágono obtenido con los simétricos de sus vértices"]]
+1996-XII/regional-4:
+  clasificar: [[numeros, logica], [ecuaciones, deduccion], medio]
+  alt: [[fig1.png, "Ruleta con ocho transformaciones: −6, :6, +4, ×7, −8, ×5, ×9, ×7"]]
+1996-XII/regional-5:
+  clasificar: [[numeros], [fracciones], dificil]
+  reemplazar:
+    - ["Indica que el 30 %", "Se indica que el 30 %"]
+    - ["Si podemos modifica los porcentajes de circulación en las vías C a M , C a P, D a P y D a S.", "Si podemos modificar los porcentajes de circulación en las vías C a M, C a P, D a P y D a S:"]
+  alt: [[fig1.png, "Esquema de vías entre los puntos A, B, C, D, M, P, S y R con los porcentajes de tráfico de cada vía"]]
+1996-XII/regional-6:
+  clasificar: [[geometria], [areas], dificil]
+  alt: [[fig1.png, "Mosaico circular con cuatro círculos interiores (dos grandes y dos pequeños); la parte sombreada es el resto"]]

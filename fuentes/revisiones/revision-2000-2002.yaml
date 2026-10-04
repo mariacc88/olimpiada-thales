@@ -1,0 +1,253 @@
+2000-XVI/provincial-1:
+  clasificar: [[numeros], [fracciones, proporcionalidad], medio]
+  reemplazar:
+    - ["Compramos 10 kg. de melocotones", "Compramos 10 kg de melocotones"]
+    - ["se pierde 1/5 de su peso", "se pierde $\\frac{1}{5}$ de su peso"]
+    - ["la mezcla pierde 1/4 de su peso", "la mezcla pierde $\\frac{1}{4}$ de su peso"]
+    - ["obtener 3 kg. de mermelada", "obtener 3 kg de mermelada"]
+2000-XVI/provincial-2:
+  clasificar: [[numeros], [divisibilidad], medio]
+  titulo: "Sobre la fecha de nacimiento del gran diestro cordobés «Manolete»"
+2000-XVI/provincial-3:
+  clasificar: [[estadistica, numeros], [combinatoria, probabilidad], medio]
+  reemplazar:
+    - ["a)¿Cuántos caminos", "a) ¿Cuántos caminos"]
+    - ["b)¿Cuál es la probabilidad", "b) ¿Cuál es la probabilidad"]
+  alt: [[fig1.png, "Plano de seis habitaciones, A a F, con la entrada por A y la salida por F"]]
+2000-XVI/provincial-4:
+  clasificar: [[geometria], [areas, pitagoras], medio]
+  reemplazar:
+    - ["sabiendo que x=10?", "sabiendo que $x = 10$?"]
+  alt: [[fig1.png, "Cruz de cinco cuadrados iguales con un segmento x que une dos vértices opuestos de los brazos"]]
+2000-XVI/provincial-5:
+  clasificar: [[geometria], [areas], medio]
+  reemplazar:
+    - ["Dividir la figura 1 en dos partes", "Divide la figura 1 en dos partes"]
+  alt: [[fig1.png, "Tres figuras formadas por 13 cuadrados cada una"]]
+2000-XVI/provincial-6:
+  clasificar: [[logica, numeros], [deduccion, cifras], medio]
+  enunciado: |
+    Tras el recuadro se oculta un número de tres cifras que tienes que adivinar con ayuda de las pistas que te damos a continuación. Por cada número que aparece en la columna de la izquierda:
+
+    - Anotamos tantos **hundidos** como cifras tenga en común con el número oculto y en la misma posición.
+    - Anotamos tantos **tocados** como cifras tenga en común con el número oculto pero en distinta posición.
+
+    Por ejemplo, si el número oculto fuese **287**, las pistas que nos darían cuando nosotros dijéramos los números 847, 378 y 123 serían:
+
+    | Número | Tocados | Hundidos |
+    |---|---|---|
+    | 847 | 1 | 1 |
+    | 378 | 2 | 0 |
+    | 123 | 1 | 0 |
+
+    Pues bien, debes adivinar el número oculto (**???**) en el caso siguiente:
+
+    | Número | Tocados | Hundidos |
+    |---|---|---|
+    | 437 | 1 | 1 |
+    | 572 | 2 | 0 |
+    | 372 | 1 | ? |
+  notas: "DATO PERDIDO: en la web falta el número de hundidos de la última pista (372)."
+2000-XVI/regional-1:
+  clasificar: [[numeros], [fracciones, proporcionalidad], dificil]
+2000-XVI/regional-2:
+  clasificar: [[geometria], [angulos], medio]
+  enunciado: |
+    Encuentra la longitud de la trayectoria curvilínea marcada continuamente en grueso.
+
+    ![Cuatro circunferencias iguales con centros A, B, C y D alineados; cada una pasa por el centro de la siguiente](fig1.png)
+
+    Los círculos tienen los centros en A, B, C y D. El radio es el mismo para los cuatro círculos, de 5 cm.
+2000-XVI/regional-3:
+  clasificar: [[logica], [deduccion], medio]
+2000-XVI/regional-4:
+  clasificar: [[estadistica], [probabilidad], medio]
+  enunciado: |
+    Elegimos dos cartas al azar (de una baraja española) y las ponemos boca arriba. ¿Qué es más probable?
+
+    - Que haya al menos un rey entre esas dos cartas.
+    - Que no haya ningún rey entre esas dos cartas.
+
+    Razona tu respuesta.
+  notas: "El enunciado no dice de qué baraja se trata; se ha añadido «baraja española» entre paréntesis como supuesto."
+2000-XVI/regional-5:
+  clasificar: [[logica], [deduccion], medio]
+  enunciado: |
+    En un colegio se ha organizado un campeonato de ajedrez. Hay un equipo formado por José, Julia, Juana y Jaime y otro formado por Luis, Lidia, Leonardo y Lorena.
+
+    - El segundo día se enfrentaron José con Lidia y Jaime con Lorena.
+    - El tercer día, Juana con Leonardo y Julia con Lidia.
+    - El cuarto día, Leonardo con José y Luis con Julia.
+
+    ¿Cuáles fueron las cuatro partidas del primer día si ninguna pareja se enfrentó más de una vez?
+2000-XVI/regional-6:
+  clasificar: [[numeros, logica], [juegos], medio]
+2000-XVI/regional-7:
+  clasificar: [[numeros, logica], [patrones], facil]
+  enunciado: |
+    Calcula el valor de la suma siguiente:
+
+    $$S = 1 - 2 + 3 - 4 + 5 - 6 + 7 - 8 + \dots + 97 - 98 + 99 - 100$$
+
+2001-XVII/provincial-1:
+  clasificar: [[numeros], [proporcionalidad], facil]
+  enunciado: |
+    Hay una campaña publicitaria en todas las ciudades para ayudarnos a hacer los cálculos de conversión de pesetas a euros, en la que se nos indica:
+
+    **La clave es: 6 euros = 1000 pesetas.**
+
+    Utiliza esta aproximación para completar las siguientes equivalencias:
+
+    | Euros | Pesetas |
+    |---|---|
+    | 18 € | … |
+    | 5,40 € | … |
+    | 2,40 € | … |
+    | … | 250 ptas |
+    | … | 600 ptas |
+    | … | 5000 ptas |
+2001-XVII/provincial-2:
+  clasificar: [[numeros, funciones], [cifras, movimiento], medio]
+  reemplazar:
+    - ["su cuenta-kilómetro marca: 13931.", "su cuentakilómetros marca 13 931."]
+    - ["observa su cuenta - kilómetro y", "observa su cuentakilómetros y"]
+2001-XVII/provincial-3:
+  clasificar: [[geometria], [pitagoras, cuerpos], medio]
+  alt: [[fig1.png, "Nave en forma de prisma rectangular de 24 × 12 × 3 m con las esquinas opuestas A y B"], [ilustracion.png, "Ilustración: el mosquito Pepito"], [ilustracion2.png, "Ilustración: la mosquita Melinda"]]
+2001-XVII/provincial-4:
+  clasificar: [[logica], [deduccion], medio]
+  enunciado: |
+    Bernardo, Carmen y Antonio son tres buenos amigos cuyas edades desconocemos. Sin embargo, se sabe que exactamente una de las siguientes frases es falsa:
+
+    1. Antonio es mayor que Bernardo.
+    2. Carmen es más joven que Bernardo.
+    3. La suma de las edades de Bernardo y Carmen es el doble de la edad de Antonio.
+    4. Carmen es mayor que Antonio.
+
+    ¿Quién es el más joven de los tres?
+2001-XVII/provincial-6:
+  clasificar: [[geometria], [areas], medio]
+  enunciado: |
+    Determina la superficie de un trapecio isósceles cuyas bases miden 12 y 20 cm y cuyas diagonales son perpendiculares.
+
+    Pista: para calcular la superficie del trapecio puedes utilizar la fórmula
+
+    $$S = \frac{(B + b) \cdot h}{2},$$
+
+    donde $B$ es la base mayor, $b$ la base menor y $h$ la altura.
+2001-XVII/regional-1:
+  clasificar: [[numeros], [numeros-primos, cifras], dificil]
+  reemplazar:
+    - ["AA -- BAB -- BACD -- AAAC", "$\\overline{AA}$, $\\overline{BAB}$, $\\overline{BACD}$ y $\\overline{AAAC}$"]
+    - ["a letras iguales corresponden cifras iguales. ¿Cuáles", "a letras iguales corresponden cifras iguales, ¿cuáles"]
+2001-XVII/regional-2:
+  clasificar: [[geometria, numeros], [areas, ecuaciones], dificil]
+  reemplazar:
+    - ["en la que está descompuesta", "en las que está descompuesta"]
+    - ["tiene 9 cm de lado. Calcula", "tiene 9 cm de lado, calcula"]
+  alt: [[fig1.png, "Rectángulo casi cuadrado descompuesto en once cuadrados de colores; el más pequeño, marcado, tiene 9 cm de lado"]]
+2001-XVII/regional-3:
+  clasificar: [[geometria], [angulos], medio]
+  titulo: "Ángulos y triángulos"
+  reemplazar:
+    - ["mide 75º y el ángulo ADC mide 50º", "mide 75° y el ángulo ADC mide 50°"]
+  alt: [[fig1.png, "Triángulos ABC (isósceles con AB = AC) y ACD (isósceles con AD = DC), con los ángulos de 75° en B y 50° en D"]]
+  notas: "En la web el nodo no tiene título; se ha tomado el de la lista de la edición."
+2001-XVII/regional-4:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["ni es se llama como", "ni se llama como"]
+2001-XVII/regional-5:
+  clasificar: [[numeros], [cifras], medio]
+  reemplazar:
+    - ["número N = 10100-100", "número $N = 10^{100} - 100$"]
+  notas: "En la web el exponente aparece como «10100»; por el contexto (la calculadora da error) es $10^{100}$."
+2001-XVII/regional-6:
+  clasificar: [[numeros], [fracciones], facil]
+  reemplazar:
+    - ["que la abaste-cen", "que la abastecen"]
+
+2002-XVIII/provincial-1:
+  clasificar: [[geometria], [areas], dificil]
+  reemplazar:
+    - ["**[FIGURA PERDIDA]**\n", ""]
+    - ["a cargo de ésta", "a cargo de esta"]
+  notas: "La ilustración decorativa original (el perro Califa) se ha perdido."
+2002-XVIII/provincial-2:
+  clasificar: [[geometria, numeros], [areas], medio]
+  reemplazar:
+    - ["lados 1,2,3,4,5,6,7,8,9 y 10 centímetros y áreas 9 c$m^{2}$, 16 c$m^{2}$, 18 c$m^{2}$, 28 c$m^{2}$ y 50 c$m^{2}$", "lados 1, 2, 3, 4, 5, 6, 7, 8, 9 y 10 centímetros y áreas 9 cm², 16 cm², 18 cm², 28 cm² y 50 cm²"]
+2002-XVIII/provincial-3:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["las cuatro primeras cifras (1,2,3,4).", "las cuatro primeras cifras (1, 2, 3, 4)."]
+    - ["a éste se le ha olvidado", "a este se le ha olvidado"]
+2002-XVIII/provincial-4:
+  clasificar: [[numeros], [cifras], dificil]
+  reemplazar:
+    - ["los dos números más cercano.", "los dos números más cercanos."]
+2002-XVIII/provincial-5:
+  clasificar: [[numeros], [ecuaciones], medio]
+  enunciado: |
+    Por presumir de certero\
+    un tirador atrevido\
+    se encontró comprometido\
+    en el lance que os refiero:
+
+    Y fue que, ante una caseta\
+    de la feria del lugar,\
+    presumió de no fallar\
+    ni un tiro con la escopeta,
+
+    y el feriante, alzando el gallo,\
+    un euro ofreció pagarle\
+    por cada acierto, y cobrarle\
+    a 60 céntimos el fallo.
+
+    Dieciséis veces tiró\
+    el tirador afamado;\
+    al fin dijo, despechado\
+    por los tiros que falló:
+
+    «Mala escopeta fue el cebo\
+    y la causa de mi afrenta,\
+    pero ajustada la cuenta\
+    ni me debes ni te debo».
+
+    Y todo el que atentamente\
+    este relato siguió\
+    podrá decir fácilmente\
+    cuántos tiros acertó.
+
+    (Rafael Rodríguez Vidal, *Enjambre matemático*)
+2002-XVIII/provincial-6:
+  clasificar: [[numeros], [cifras], dificil]
+  reemplazar:
+    - ["En cada una de las cuatros ciudades", "En cada una de las cuatro ciudades"]
+2002-XVIII/regional-1:
+  clasificar: [[numeros, logica], [deduccion], medio]
+  alt: [[fig1.png, "Las diez fichas de dominó disponibles"], [fig2.png, "Esquema para colocar las fichas en dos filas horizontales de cinco"]]
+2002-XVIII/regional-2:
+  clasificar: [[geometria], [areas], dificil]
+  reemplazar:
+    - ["tiene 200 cm2 de superficie", "tiene 200 cm² de superficie"]
+  alt: [[fig1.png, "Hexágono regular ABCDEF con el triángulo ACE, las perpendiculares desde B, D y F y el triángulo central rosado"]]
+2002-XVIII/regional-3:
+  clasificar: [[logica, numeros], [deduccion, divisibilidad], dificil]
+  reemplazar:
+    - ["Sus nombres en la red son 2,3,5 y 11", "Sus nombres en la red son 2, 3, 5 y 11"]
+2002-XVIII/regional-4:
+  clasificar: [[estadistica, numeros], [combinatoria, probabilidad], dificil]
+  reemplazar:
+    - ["al que con-siga", "al que consiga"]
+2002-XVIII/regional-5:
+  clasificar: [[numeros], [], dificil]
+  reemplazar:
+    - ["de 210000 ó 103000 granos", "de $2^{10000}$ o $10^{3000}$ granos"]
+    - ["de 210 000 o 103 000 granos", "de $2^{10000}$ o $10^{3000}$ granos"]
+  alt: [[ilustracion.png, "Ilustración: el rey Don Pepe I"], [ilustracion2.png, "Ilustración: Paquito Cabezas"]]
+  notas: "En la web los exponentes se perdieron («210000 ó 103000»); por el sentido del problema son $2^{10000}$ y $10^{3000}$."
+2002-XVIII/regional-6:
+  clasificar: [[geometria], [areas], dificil]
+  reemplazar:
+    - ["por orden de antiguedad", "por orden de antigüedad"]

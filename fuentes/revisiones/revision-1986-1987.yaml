@@ -1,0 +1,114 @@
+1986-II/provincial-1:
+  clasificar: [[numeros], [cifras], facil]
+1986-II/provincial-2:
+  clasificar: [[geometria], [areas], facil]
+1986-II/provincial-3:
+  clasificar: [[numeros], [fracciones], facil]
+1986-II/provincial-4:
+  clasificar: [[numeros], [cifras], facil]
+  reemplazar:
+    - ["30 = 5 x 5 + 5", "$30 = 5 \\times 5 + 5$"]
+    - ["sólamente", "solamente"]
+1986-II/provincial-5:
+  clasificar: [[estadistica, logica], [combinatoria], medio]
+1986-II/provincial-6:
+  clasificar: [[geometria], [cuerpos], medio]
+1986-II/provincial-7:
+  clasificar: [[logica], [juegos], medio]
+  reemplazar:
+    - ["Averigüa", "Averigua"]
+    - ["travase", "trasvase"]
+1986-II/provincial-8:
+  clasificar: [[numeros], [ecuaciones], medio]
+  reemplazar:
+    - ["a éste resultado", "a este resultado"]
+1986-II/regional-1:
+  clasificar: [[numeros], [proporcionalidad], medio]
+  alt: [[ilustracion.png, "Ilustración: el fantasma Fantasmón"]]
+1986-II/regional-2:
+  clasificar: [[geometria, numeros], [areas, proporcionalidad], medio]
+  notas: ""
+  borrar_fuente_extra: true
+1986-II/regional-3:
+  clasificar: [[funciones], [graficas], facil]
+  reemplazar:
+    - ["que véis", "que veis"]
+    - ["- Señala el día", "- ¿Señala el día"]
+  alt: [[fig1.png, "Diagrama de barras con los kilómetros recorridos cada día de la semana"]]
+1986-II/regional-4:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["monedas?. ¡Ánimo!", "monedas? ¡Ánimo!"]
+1986-II/regional-5:
+  clasificar: [[geometria], [], medio]
+1986-II/regional-6:
+  clasificar: [[logica, numeros], [deduccion], dificil]
+1986-II/regional-7:
+  clasificar: [[geometria], [areas], medio]
+  reemplazar:
+    - ["cuadra-dos", "cuadrados"]
+    - ["También con doce figuras", "También con doce cerillas"]
+  alt: [[fig1.png, "Cruz formada con doce cerillas"]]
+  notas: "En la web, el apartado b) dice «doce figuras»; por el contexto son doce cerillas."
+1986-II/regional-8:
+  desde: F0046
+  alt: [[ilustracion.png, "Ilustración: Pepito el pastor"], [ilustracion2.png, "Ilustración: una oveja"]]
+  clasificar: [[numeros], [divisibilidad], medio]
+  reemplazar:
+    - ["agru-paba", "agrupaba"]
+  notas: "En la web figura como «Regional 2» (errata); por el orden de la lista de la edición es el Regional 8."
+
+1987-III/provincial-1:
+  clasificar: [[estadistica, numeros], [combinatoria], medio]
+1987-III/provincial-2:
+  clasificar: [[numeros], [divisibilidad], medio]
+  reemplazar:
+    - ["Dí el día", "Di el día"]
+1987-III/provincial-3:
+  clasificar: [[numeros], [divisibilidad], facil]
+1987-III/provincial-4:
+  clasificar: [[numeros], [ecuaciones], medio]
+  alt: [[fig1.png, "Ejemplo resuelto en un triángulo y cuadrado con las sumas 23, 28, 32 y 27 en los lados"]]
+1987-III/provincial-5:
+  clasificar: [[estadistica], [combinatoria], medio]
+1987-III/provincial-6:
+  clasificar: [[geometria, numeros], [areas, ecuaciones], facil]
+  reemplazar:
+    - ["cuándto", "cuánto"]
+    - ["son de 90º.", "son de 90°."]
+  alt: [[fig1.png, "Plano en forma de L de 64 m², con lados de 7 m, 6 m y 13 m y las longitudes A y B desconocidas"]]
+1987-III/provincial-7:
+  clasificar: [[geometria], [pitagoras], dificil]
+  alt: [[fig1.png, "Triángulo rectángulo en A con la altura AH, que divide la hipotenusa en 16 m y 49 m"]]
+1987-III/provincial-8:
+  clasificar: [[numeros], [ecuaciones], medio]
+  reemplazar:
+    - ["¿Con cúantos", "¿Con cuántos"]
+1987-III/regional-1:
+  clasificar: [[numeros], [proporcionalidad], facil]
+  reemplazar:
+    - ["5 m3 a la hora", "5 m³ a la hora"]
+1987-III/regional-2:
+  clasificar: [[geometria], [cuerpos], facil]
+1987-III/regional-3:
+  desde: F0064
+  clasificar: [[numeros], [cifras], medio]
+  reemplazar:
+    - ["averigüar", "averiguar"]
+    - ["segun-do", "segundo"]
+  notas: "En la web figura como «Regional 5» (errata); por el orden de la lista de la edición es el Regional 3."
+1987-III/regional-4:
+  clasificar: [[numeros], [ecuaciones], dificil]
+1987-III/regional-5:
+  desde: F0066
+  clasificar: [[numeros], [cifras], medio]
+  reemplazar:
+    - ["(123456789 0 = 1)", "($123456789^0 = 1$)"]
+1987-III/regional-6:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["Bues bien", "Pues bien"]
+    - ["tablero de 5 x 5", "tablero de 5 × 5"]
+1987-III/regional-7:
+  clasificar: [[geometria], [areas], dificil]
+  alt: [[fig1.png, "Cuadrado grande con un cuadrado inclinado coloreado en su interior, formado por segmentos que unen vértices con puntos de los lados"]]

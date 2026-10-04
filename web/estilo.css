@@ -185,7 +185,7 @@ input[type="search"], input[type="text"], select {
 .texto { overflow-wrap: anywhere; }
 .texto p { margin: 0.55em 0; }
 .texto img { display: block; max-width: min(100%, 520px); height: auto; margin: 12px auto; border-radius: 4px; background: #fff; }
-.texto img[src$="/ilustracion.png"] { max-width: min(100%, 220px); max-height: 220px; width: auto; }
+.texto img[src*="/ilustracion"] { max-width: min(100%, 220px); max-height: 220px; width: auto; }
 .texto table { border-collapse: collapse; margin: 12px auto; font-size: 0.92rem; display: block; overflow-x: auto; max-width: 100%; width: fit-content; }
 .texto th, .texto td { border: 1px solid var(--borde); padding: 4px 10px; text-align: center; }
 .texto thead:not(:has(th:not(:empty))) { display: none; }

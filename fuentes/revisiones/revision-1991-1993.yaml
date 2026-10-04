@@ -1,0 +1,192 @@
+1991-VII/provincial-1:
+  clasificar: [[logica], [deduccion], facil]
+  enunciado: |
+    Un alumno le hizo el siguiente razonamiento a su profesor de Matemáticas:
+
+    *«Resulta que no tengo tiempo para venir a la escuela en todo el año. Verá usted: duermo ocho horas diarias que, sumadas, dan 122 días al año; no hay clase ni los sábados ni los domingos, que son 104 días al año; tenemos 60 días de vacaciones de verano. Necesito tres horas diarias para comer, lo que supone más de 45 días al año; necesito al menos dos horas diarias de recreación, que suman más de 30 días al año».*
+
+    El alumno hizo la siguiente suma:
+
+    | Concepto | Días |
+    |---|---|
+    | Sueño (8 horas diarias) | 122 |
+    | Sábados y domingos | 104 |
+    | Vacaciones de verano | 60 |
+    | Comidas (3 horas diarias) | 45 |
+    | Recreación (2 horas diarias) | 30 |
+    | **Total** | **361** |
+
+    *«Ya ve, todo esto solo me deja cuatro días para estar enfermo y para disfrutar del pueblo, por lo que este curso no tenemos ni un solo día de clase».*
+
+    El profesor repasó la suma y vio que no había ningún error y, después de estudiar el problema, encontró por qué no quedaba ningún día al año para asistir a clase. ¿Eres tú capaz de explicar dónde está el error?
+1991-VII/provincial-2:
+  clasificar: [[geometria], [areas], medio]
+  reemplazar:
+    - ["AM=10 cm y CN=15 cm\n", "AM = 10 cm y CN = 15 cm.\n\n"]
+    - ["Se une M con N y por A se traza la paralela AP al segmento MN.\n", "Se une M con N y por A se traza la paralela AP al segmento MN.\n\n"]
+  alt: [[fig1.png, "Cuadrado ABCD con el segmento MN y su paralela AP por A, que lo dividen en tres partes"]]
+1991-VII/provincial-3:
+  clasificar: [[numeros], [divisibilidad], medio]
+  reemplazar:
+    - ["360 = 23 x 15 + 15.", "$360 = 23 \\times 15 + 15$."]
+    - ["si el divisor es «n»?", "si el divisor es $n$?"]
+1991-VII/provincial-4:
+  clasificar: [[geometria, numeros], [areas, ecuaciones], facil]
+  notas: "FIGURA PERDIDA: el enunciado nombra los lados OR y QR de una figura que no está en la web; el problema se entiende igualmente."
+1991-VII/provincial-5:
+  clasificar: [[numeros], [fracciones, ecuaciones], medio]
+1991-VII/provincial-6:
+  clasificar: [[funciones, numeros], [graficas, proporcionalidad], medio]
+  reemplazar:
+    - ["¿Qué lapices", "¿Qué lápices"]
+  alt: [[fig1.png, "Gráfica precio de la caja – número de lápices con seis cajas, A a F"]]
+1991-VII/provincial-7:
+  clasificar: [[funciones, logica], [movimiento], medio]
+1991-VII/provincial-8:
+  clasificar: [[numeros], [ecuaciones], medio]
+  reemplazar:
+    - ["3(2X + 1)^2^+5(X - Y)^2^+7(X + Y - Z )^2^ = 0", "$$3(2X + 1)^2 + 5(X - Y)^2 + 7(X + Y - Z)^2 = 0$$"]
+    - ["Determina tres puntos racionales X, Y, Z", "Determina tres números racionales $X$, $Y$, $Z$"]
+  notas: "En la web dice «tres puntos racionales»; por el contexto son tres números racionales."
+1991-VII/regional-1:
+  clasificar: [[logica], [deduccion], medio]
+  enunciado: |
+    Un día asistía a una reunión; en una sala contigua había tres personas (una dama y dos caballeros) y, hechas las presentaciones, oí la siguiente conversación:
+
+    — Es curioso que nos hayamos reunido tres personas y que los tres colores de pelo coincidan con los tres apellidos.
+
+    — Sí que lo es. Mi pelo es rubio, pero también es curioso que nadie tiene el color de pelo igual que su apellido.
+
+    — Es verdad —exclamó el Sr. Blanco, a quien yo conocía, pues era amigo mío.
+
+    Ya no seguí escuchando más, pues eso me permitió saber de qué color era el pelo de cada uno y el apellido de la señora. ¿Puedes hacerlo tú también? Explica cómo.
+1991-VII/regional-2:
+  clasificar: [[geometria], [teselaciones], medio]
+  reemplazar:
+    - ["de 3 m. de lado", "de 3 m de lado"]
+    - ["de 1 m. de lado y otras", "de 1 m de lado y otras"]
+    - ["rombo de 1 m. de lado", "rombo de 1 m de lado"]
+  alt: [[fig1.png, "Las piezas (tres triángulos y tres rombos) y el suelo triangular dividido en triángulos de 1 m"]]
+1991-VII/regional-3:
+  clasificar: [[geometria], [areas], dificil]
+  alt: [[fig1.png, "Cuadrado con cuatro arcos de circunferencia centrados en sus vértices que forman una estrella curva"]]
+1991-VII/regional-4:
+  clasificar: [[numeros], [ecuaciones], dificil]
+1991-VII/regional-5:
+  clasificar: [[funciones], [graficas, movimiento], facil]
+  reemplazar:
+    - ["los 100 primeros m?", "los 100 primeros metros?"]
+  alt: [[fig1.png, "Gráfica velocidad (km/h) – distancia (km) de los coches A y B"]]
+1991-VII/regional-6:
+  clasificar: [[numeros], [numeros-primos], medio]
+1991-VII/regional-7:
+  clasificar: [[funciones, numeros, logica], [patrones, ecuaciones], dificil]
+  alt: [[fig1.png, "Ejemplos: círculo con 3 vale 47, con 10 vale 138, con 1 vale 39; recuadro con 1 vale 5, con 20 vale 43, con 99 vale 201"], [fig2.png, "Ecuación: recuadro con X igual a círculo con X"]]
+
+1992-VIII/provincial-1:
+  clasificar: [[funciones], [graficas], medio]
+  reemplazar:
+    - ["el volumen que contiene ésta", "el volumen que contiene esta"]
+  alt: [[fig1.png, "Tres botellas (esférica, en forma de prisma y matraz) y tres gráficas altura–volumen"]]
+1992-VIII/provincial-2:
+  clasificar: [[geometria], [pitagoras], medio]
+  alt: [[fig1.png, "Triángulo rectángulo de catetos 12 y 5 cm con los arcos que cortan la hipotenusa en M y N"]]
+1992-VIII/provincial-3:
+  clasificar: [[numeros], [divisibilidad, cifras], medio]
+  reemplazar:
+    - ["las cifras x e y del número que se escribe x22y", "las cifras $x$ e $y$ del número que se escribe $\\overline{x22y}$"]
+1992-VIII/provincial-4:
+  clasificar: [[logica], [deduccion], facil]
+  reemplazar:
+    - ["El resultado de ésta es", "El resultado de esta es"]
+1992-VIII/provincial-5:
+  clasificar: [[geometria], [areas, pitagoras], medio]
+  alt: [[fig1.png, "Figura formada por tres cuadrados y dos triángulos rectángulos isósceles; uno de los lados mide 8 m"]]
+1992-VIII/provincial-6:
+  clasificar: [[numeros], [fracciones], medio]
+1992-VIII/provincial-7:
+  clasificar: [[numeros], [cifras], medio]
+  reemplazar:
+    - ["(Ejemplo: la operación\" 232 + 365 = 468 corresponde realmente a la 123 + 456 = 579).", "(Ejemplo: la operación $232 + 365 = 468$ corresponde realmente a $123 + 456 = 579$)."]
+    - ["a) 7668 + 2692 = 9027", "a) $7668 + 2692 = 9027$"]
+    - ["b) 1663 x 3 = 21379", "b) $1663 \\times 3 = 21379$"]
+1992-VIII/provincial-8:
+  clasificar: [[geometria], [areas], medio]
+  alt: [[fig1.png, "Arco de herradura con el segmento AB de 1 m y el radio del círculo interior de 1 m"]]
+  notas: "PREGUNTA INCOMPLETA: en la web el enunciado termina sin indicar qué se pide (probablemente el área o el perímetro del hueco del arco)."
+1992-VIII/regional-1:
+  clasificar: [[geometria], [], dificil]
+  reemplazar:
+    - ["El diámetro del cilindro interior es 5 cm., y el de los discos de los extremos, sobre los que rueda, es de 10 cm.", "El diámetro del cilindro interior es 5 cm, y el de los discos de los extremos, sobre los que rueda, es de 10 cm."]
+    - ["se haya desplazado 12 cm. desde su posición original ?", "se haya desplazado 12 cm desde su posición original?"]
+  notas: "FIGURA PERDIDA: el enunciado se refiere a una figura de la bobina que no está en la web."
+1992-VIII/regional-2:
+  clasificar: [[numeros], [divisibilidad, ecuaciones], medio]
+1992-VIII/regional-3:
+  clasificar: [[numeros, logica], [cifras, patrones], dificil]
+  reemplazar:
+    - ["( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 ... ) ", "(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 …)\n\n"]
+    - ["en la posición 1.002", "en la posición 1002"]
+    - ["las 1.002 cifras", "las 1002 cifras"]
+    - ["¡ Gracias !", "¡Gracias!"]
+1992-VIII/regional-4:
+  clasificar: [[geometria, logica], [pitagoras, patrones], medio]
+  reemplazar:
+    - ["(¡ Recuerda !, queremos", "(¡Recuerda!, queremos"]
+1992-VIII/regional-5:
+  clasificar: [[funciones, estadistica], [graficas, estadistica-descriptiva], medio]
+  alt: [[fig1.png, "Gráfica del precio por litro de la gasolina de 1960 a 1977, con el eje horizontal no proporcional al tiempo"]]
+1992-VIII/regional-6:
+  clasificar: [[numeros], [proporcionalidad], medio]
+  reemplazar:
+    - ["pese a a que", "pese a que"]
+    - ["40.000 km., pese", "40 000 km, pese"]
+1992-VIII/regional-7:
+  clasificar: [[logica], [deduccion], medio]
+  reemplazar:
+    - ["ellos mismo s nos", "ellos mismos nos"]
+1992-VIII/regional-8:
+  clasificar: [[geometria, numeros], [areas, ecuaciones], dificil]
+  reemplazar:
+    - ["es 1.500 «unidades", "es 1500 «unidades"]
+
+1993-IX/provincial-1:
+  clasificar: [[geometria], [areas], medio]
+  alt: [[fig1.png, "Dos cuadrados iguales; un vértice de uno está en el centro del otro y la zona común está rayada"]]
+1993-IX/provincial-2:
+  clasificar: [[numeros], [fracciones], medio]
+1993-IX/provincial-3:
+  clasificar: [[funciones], [graficas], facil]
+  reemplazar:
+    - ["¿Quienes hicieron", "¿Quiénes hicieron"]
+  alt: [[fig1.png, "Gráfica precio – duración de la llamada con los puntos Juan, Bárbara, Clara, David y Jaime"]]
+1993-IX/provincial-4:
+  clasificar: [[numeros, logica], [cifras, deduccion], medio]
+  alt: [[fig1.png, "Multiplicación con cifras borradas: _ _ 5 por 1 _ _, con productos parciales 2 _ _ 5, 1 3 _ 0, _ _ _ y resultado 4 _ 7 7 _"]]
+1993-IX/provincial-5:
+  clasificar: [[numeros], [cifras], medio]
+  reemplazar:
+    - ["El producto de dos cualesquiera de ellos aumentado con el tercero", "El producto de dos cualesquiera de ellas, aumentado en la tercera,"]
+1993-IX/provincial-6:
+  clasificar: [[geometria], [angulos], facil]
+  reemplazar:
+    - ["un radio de 60 cm. y ha recorrido un ángulo de 1080.", "un radio de 60 cm y ha recorrido un ángulo de 1080°."]
+1993-IX/regional-1:
+  clasificar: [[logica, numeros], [deduccion], medio]
+  alt: [[fig1.png, "Fortaleza triangular con nueve celdas redondas y cuatro guardias G en las piezas triangulares"]]
+1993-IX/regional-2:
+  clasificar: [[geometria], [pitagoras, cuerpos], dificil]
+  alt: [[fig1.png, "Dos circunferencias de igual centro en planos perpendiculares, cada una dividida en ocho partes, con el segmento AB"]]
+1993-IX/regional-3:
+  clasificar: [[numeros, logica], [fracciones, patrones], dificil]
+  reemplazar:
+    - ["perfecta-mente", "perfectamente"]
+1993-IX/regional-4:
+  clasificar: [[funciones], [graficas], facil]
+  reemplazar:
+    - ["mañana,en", "mañana, en"]
+  alt: [[fig1.png, "Seis gráficas altura de la bandera – tiempo, de la a) a la f)"]]
+1993-IX/regional-5:
+  clasificar: [[geometria], [areas], dificil]
+1993-IX/regional-6:
+  clasificar: [[numeros], [divisibilidad], dificil]
