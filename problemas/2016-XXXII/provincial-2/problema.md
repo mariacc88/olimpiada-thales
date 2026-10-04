@@ -6,7 +6,7 @@ numero: 2
 titulo: Guardando monedas
 bloques: [numeros]
 bloques_thales: []
-etiquetas: [fracciones, patrones]
+etiquetas: [fracciones]
 dificultad: facil
 origen_clasificacion: propuesta
 tiene_solucion: true

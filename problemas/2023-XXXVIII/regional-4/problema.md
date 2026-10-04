@@ -4,7 +4,7 @@ edicion: 2023-XXXVIII
 fase: regional
 numero: 4
 titulo: El jardín rectangular
-bloques: [geometria]
+bloques: [geometria, numeros]
 bloques_thales: []
 etiquetas: [areas, ecuaciones]
 dificultad: medio

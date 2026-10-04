@@ -135,6 +135,20 @@ h1, h2 { line-height: 1.25; }
 .filtro-fila label { display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--texto-suave); margin-bottom: 6px; }
 fieldset.filtro label { display: flex; gap: 8px; align-items: center; padding: 2px 0; font-size: 0.95rem; }
 fieldset.filtro .cuenta { margin-left: auto; color: var(--texto-suave); font-size: 0.82rem; }
+/* Árbol de temas */
+.arbol, .arbol ul { list-style: none; margin: 0; padding: 0; }
+.arbol .fila, .arbol .etiquetas li { display: flex; align-items: center; gap: 4px; }
+.arbol label { display: flex; gap: 8px; align-items: center; padding: 2px 0; font-size: 0.95rem; flex: 1; }
+.arbol .etiquetas { margin: 0 0 4px 26px; }
+.arbol .etiquetas label { font-size: 0.9rem; }
+.arbol .cuenta { color: var(--texto-suave); font-size: 0.82rem; }
+.desplegar, .desplegar-hueco { width: 22px; flex: none; }
+.desplegar {
+  font: inherit; font-size: 0.8rem; border: none; background: none; color: var(--texto-suave);
+  cursor: pointer; padding: 2px 0; border-radius: 4px;
+}
+.desplegar:hover { color: var(--acento); }
+
 input[type="search"], input[type="text"], select {
   width: 100%; font: inherit; font-size: 0.95rem; padding: 7px 9px;
   border: 1px solid var(--borde); border-radius: 8px; background: var(--superficie); color: var(--texto);

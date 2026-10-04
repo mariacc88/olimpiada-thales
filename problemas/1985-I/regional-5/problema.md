@@ -4,9 +4,9 @@ edicion: 1985-I
 fase: regional
 numero: 5
 titulo: Largo camino
-bloques: [logica]
+bloques: [logica, numeros]
 bloques_thales: [numeros]
-etiquetas: [juegos]
+etiquetas: [juegos, divisibilidad]
 dificultad: dificil
 origen_clasificacion: propuesta
 tiene_solucion: false

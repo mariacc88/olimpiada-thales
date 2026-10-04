@@ -4,9 +4,9 @@ edicion: 2016-XXXII
 fase: regional
 numero: 3
 titulo: Visita al museo
-bloques: [funciones]
+bloques: [funciones, numeros]
 bloques_thales: []
-etiquetas: [fracciones, graficas]
+etiquetas: [graficas, fracciones]
 dificultad: dificil
 origen_clasificacion: propuesta
 tiene_solucion: true

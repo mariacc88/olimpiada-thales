@@ -55,6 +55,9 @@ def validar():
         for e in meta["etiquetas"] or []:
             if e not in tax["etiquetas"]:
                 error(f"etiqueta desconocida: {e} (añádela a taxonomia.yaml)")
+            elif tax["etiquetas"][e]["bloque"] not in (meta["bloques"] or []):
+                # Modelo jerárquico: los bloques de un problema incluyen siempre los de sus etiquetas
+                error(f"la etiqueta {e} es del bloque {tax['etiquetas'][e]['bloque']}, que falta en bloques")
         if meta["dificultad"] not in tax["dificultades"]:
             error(f"dificultad no válida: {meta['dificultad']}")
         if meta["origen_clasificacion"] not in ORIGENES:

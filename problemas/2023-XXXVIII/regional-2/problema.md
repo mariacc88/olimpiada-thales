@@ -4,7 +4,7 @@ edicion: 2023-XXXVIII
 fase: regional
 numero: 2
 titulo: ¡Vaya suma!
-bloques: [numeros]
+bloques: [numeros, logica]
 bloques_thales: []
 etiquetas: [cifras, patrones]
 dificultad: medio

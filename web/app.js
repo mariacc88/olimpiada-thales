@@ -89,35 +89,87 @@ function prepararFiltros() {
   }
 
   const contar = (fn) => problemas.filter(fn).length;
-  $("#f-bloques").insertAdjacentHTML("beforeend", Object.entries(taxonomia.bloques).map(([id, nombre]) =>
-    `<label><input type="checkbox" name="bloque" value="${id}"> ${nombre}
-       <span class="cuenta">${contar((p) => p.bloques.includes(id))}</span></label>`).join(""));
   $("#f-dificultades").insertAdjacentHTML("beforeend", Object.entries(taxonomia.dificultades).map(([id, nombre]) =>
     `<label><input type="checkbox" name="dificultad" value="${id}"> ${nombre}
        <span class="cuenta">${contar((p) => p.dificultad === id)}</span></label>`).join(""));
+  prepararArbolTemas(contar);
 
-  const grupos = Object.entries(taxonomia.bloques).map(([b, nombreBloque]) => {
-    const opciones = Object.entries(taxonomia.etiquetas)
-      .filter(([, e]) => e.bloque === b)
-      .map(([id, e]) => {
-        const n = contar((p) => p.etiquetas.includes(id));
-        return n ? `<option value="${id}">${e.nombre} (${n})</option>` : "";
-      }).join("");
-    return opciones ? `<optgroup label="${nombreBloque}">${opciones}</optgroup>` : "";
-  });
-  $("#f-etiqueta").insertAdjacentHTML("beforeend", grupos.join(""));
-
-  document.querySelectorAll(".filtros input, .filtros select, #f-orden")
+  document.querySelectorAll(".filtros input:not(.arbol input), .filtros select, #f-orden")
     .forEach((el) => el.addEventListener(el.type === "search" ? "input" : "change", aplicarFiltros));
   $("#limpiar").addEventListener("click", () => {
     $("#f-texto").value = "";
     $("#f-desde").selectedIndex = 0;
     $("#f-hasta").selectedIndex = $("#f-hasta").options.length - 1;
     document.querySelectorAll('input[name="fase"]').forEach((i) => (i.checked = true));
-    document.querySelectorAll('input[name="bloque"], input[name="dificultad"], #f-solucion').forEach((i) => (i.checked = false));
-    $("#f-etiqueta").value = "";
+    document.querySelectorAll('input[name="dificultad"], #f-solucion, .arbol input').forEach((i) => (i.checked = false));
+    actualizarArbol();
     aplicarFiltros();
   });
+}
+
+/* Árbol de temas: bloques con sus etiquetas (modelo jerárquico: cada etiqueta es de un bloque).
+   - Marcar un bloque equivale a marcar todas sus etiquetas, e incluye además los problemas
+     del bloque que no tienen etiqueta.
+   - Desmarcar alguna etiqueta deja el bloque a medias (indeterminado) y estrecha la búsqueda.
+   - Dentro del árbol todo se combina con «o». */
+function prepararArbolTemas(contar) {
+  const { taxonomia } = estado.datos;
+  const html = Object.entries(taxonomia.bloques).map(([b, nombre]) => {
+    // Solo se muestran las etiquetas que usa algún problema
+    const etiquetas = Object.entries(taxonomia.etiquetas)
+      .filter(([id, e]) => e.bloque === b && contar((p) => p.etiquetas.includes(id)))
+      .map(([id, e]) => `<li><label><input type="checkbox" class="cb-etiqueta" value="${id}" data-bloque="${b}"> ${e.nombre}</label>
+          <span class="cuenta">${contar((p) => p.etiquetas.includes(id))}</span></li>`).join("");
+    const desplegar = etiquetas
+      ? `<button type="button" class="desplegar" aria-expanded="false" aria-controls="etq-${b}" aria-label="Ver las etiquetas de ${nombre}">▸</button>`
+      : '<span class="desplegar-hueco"></span>';
+    return `<li class="nodo-bloque">
+        <div class="fila">${desplegar}
+          <label><input type="checkbox" class="cb-bloque" value="${b}"> ${nombre}</label>
+          <span class="cuenta">${contar((p) => p.bloques.includes(b))}</span></div>
+        ${etiquetas ? `<ul class="etiquetas" id="etq-${b}" hidden>${etiquetas}</ul>` : ""}
+      </li>`;
+  }).join("");
+  const arbol = $("#f-temas");
+  arbol.innerHTML = html;
+
+  arbol.addEventListener("click", (e) => {
+    const boton = e.target.closest(".desplegar");
+    if (!boton) return;
+    const abierto = boton.getAttribute("aria-expanded") === "true";
+    boton.setAttribute("aria-expanded", String(!abierto));
+    boton.textContent = abierto ? "▸" : "▾";
+    $("#" + boton.getAttribute("aria-controls")).hidden = abierto;
+  });
+  arbol.addEventListener("change", (e) => {
+    const cb = e.target;
+    if (cb.classList.contains("cb-bloque")) {
+      // El bloque arrastra a todas sus etiquetas
+      arbol.querySelectorAll(`.cb-etiqueta[data-bloque="${cb.value}"]`).forEach((i) => (i.checked = cb.checked));
+    } else if (cb.classList.contains("cb-etiqueta")) {
+      const todas = [...arbol.querySelectorAll(`.cb-etiqueta[data-bloque="${cb.dataset.bloque}"]`)];
+      arbol.querySelector(`.cb-bloque[value="${cb.dataset.bloque}"]`).checked = todas.every((i) => i.checked);
+    }
+    actualizarArbol();
+    aplicarFiltros();
+  });
+}
+
+/* Estado indeterminado de los bloques con solo parte de sus etiquetas marcadas */
+function actualizarArbol() {
+  document.querySelectorAll(".cb-bloque").forEach((cb) => {
+    const etiquetas = [...document.querySelectorAll(`.cb-etiqueta[data-bloque="${cb.value}"]`)];
+    const marcadas = etiquetas.filter((i) => i.checked).length;
+    cb.indeterminate = !cb.checked && marcadas > 0;
+  });
+}
+
+/* Devuelve una función que dice si un problema cumple el filtro de temas (null si no hay filtro) */
+function filtroTemas() {
+  const bloquesEnteros = [...document.querySelectorAll(".cb-bloque:checked")].map((i) => i.value);
+  const etiquetas = [...document.querySelectorAll(".cb-etiqueta:checked")].map((i) => i.value);
+  if (!bloquesEnteros.length && !etiquetas.length) return null;
+  return (p) => p.bloques.some((b) => bloquesEnteros.includes(b)) || p.etiquetas.some((e) => etiquetas.includes(e));
 }
 
 function aplicarFiltros() {
@@ -125,17 +177,15 @@ function aplicarFiltros() {
   const desde = Number($("#f-desde").value);
   const hasta = Number($("#f-hasta").value);
   const fases = marcados("fase");
-  const bloques = marcados("bloque");
+  const temas = filtroTemas();
   const dificultades = marcados("dificultad");
-  const etiqueta = $("#f-etiqueta").value;
   const conSolucion = $("#f-solucion").checked;
 
   estado.filtrados = estado.datos.problemas.filter((p) => {
     if (p.año < desde || p.año > hasta) return false;
     if (!fases.includes(p.fase)) return false;
-    if (bloques.length && !p.bloques.some((b) => bloques.includes(b))) return false;
+    if (temas && !temas(p)) return false;
     if (dificultades.length && !dificultades.includes(p.dificultad)) return false;
-    if (etiqueta && !p.etiquetas.includes(etiqueta)) return false;
     if (conSolucion && !p.tiene_solucion) return false;
     if (palabras.length) {
       p._texto ??= normalizar(`${p.titulo} ${p.enunciado} ${p.solucion}`);

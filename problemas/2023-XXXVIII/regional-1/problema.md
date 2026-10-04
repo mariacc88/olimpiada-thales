@@ -4,7 +4,7 @@ edicion: 2023-XXXVIII
 fase: regional
 numero: 1
 titulo: Cruzanúmeros
-bloques: [numeros]
+bloques: [numeros, logica]
 bloques_thales: []
 etiquetas: [divisibilidad, cifras, deduccion]
 dificultad: medio

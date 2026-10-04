@@ -171,7 +171,7 @@ Convenciones fijadas en el piloto:
 - **Tablas y cuadrículas** se transcriben como tablas Markdown, no como imagen. Si no tienen cabecera, se deja la primera fila vacía (`| | | |`) y la web y el PDF la ocultan.
 - **Listas con números no consecutivos** (definiciones de crucigramas, etc.) se escriben como viñetas con el número en negrita, porque Markdown renumera las listas.
 - **Soluciones:** se transcriben fieles al original pero condensadas: cuando el original desarrolla un recuento paso a paso en muchas diapositivas, se recoge el razonamiento y el resultado, y se indica en `notas`. Las erratas evidentes del original se corrigen y se anota.
-- **Clasificación:** `bloques_thales` conserva lo que dijo la web antigua; `bloques`, `etiquetas` y `dificultad` son la propuesta que se revisa.
+- **Clasificación (modelo jerárquico):** cada etiqueta pertenece a un único bloque; un problema puede tener varias etiquetas, de uno o varios bloques, y sus `bloques` incluyen siempre los de sus etiquetas (lo exige `validar.py`). Puede haber un bloque sin etiqueta si ninguna encaja. El bloque principal se escribe primero. `bloques_thales` conserva lo que dijo la web antigua; `bloques`, `etiquetas` y `dificultad` son la propuesta que se revisa.
 
 ### 4.4. `taxonomia.yaml`
 
@@ -249,7 +249,7 @@ Las etiquetas actuales son de muestra; las instrucciones para editarlas están a
 
 ### Fase 4. Explorador web (GitHub Pages)
 - Una página estática, sin servidor, en HTML y JavaScript, con KaTeX para las fórmulas.
-- **Filtros:** año o rango de años, fase, bloque, etiqueta, dificultad, «con solución» y búsqueda de texto.
+- **Filtros:** rango de años, fase, tema, dificultad, «con solución» y búsqueda de texto. El tema es un árbol de bloques y etiquetas: marcar un bloque equivale a marcar todas sus etiquetas (e incluye los problemas del bloque sin etiqueta), y desmarcar etiquetas estrecha dentro del bloque. Dentro del árbol las selecciones se combinan con «o»; entre filtros distintos, con «y».
 - **Vista de cada problema:** enunciado con figuras y solución desplegable; enlace a la fuente original.
 - **Cesta de selección:** se marcan problemas y se genera un PDF con opciones:
   - Con o sin soluciones.

@@ -14,8 +14,13 @@
 # dentro del bloque que corresponda. Reglas para el identificador:
 #   - minúsculas, sin tildes ni espacios (usa guiones: "numeros-primos")
 #   - único en todo el fichero, aunque esté en otro bloque
-# Una etiqueta se agrupa bajo un bloque solo para ordenar el menú de filtros;
-# un problema puede llevar etiquetas de cualquier bloque.
+#
+# Modelo jerárquico:
+#   - Cada etiqueta pertenece a un único bloque (el bloque bajo el que está escrita).
+#   - Un problema puede llevar varias etiquetas, de uno o de varios bloques.
+#   - Sus bloques incluyen siempre los de sus etiquetas (validar.py lo exige).
+#     Ejemplo: etiquetas [estadistica-descriptiva, areas] → bloques [estadistica, geometria].
+#   - Puede haber un bloque sin etiqueta, si ninguna de sus etiquetas encaja.
 #
 # Para renombrar algo visible, cambia solo el nombre (a la derecha de ":").
 # Cambiar un identificador obliga a cambiarlo también en los problemas que lo usen.

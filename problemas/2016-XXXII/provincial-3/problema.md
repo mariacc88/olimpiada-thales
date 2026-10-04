@@ -4,7 +4,7 @@ edicion: 2016-XXXII
 fase: provincial
 numero: 3
 titulo: Concurso de ingenio
-bloques: [funciones]
+bloques: [funciones, numeros]
 bloques_thales: []
 etiquetas: [ecuaciones]
 dificultad: facil

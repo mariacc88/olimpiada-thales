@@ -4,7 +4,7 @@ edicion: 2016-XXXII
 fase: provincial
 numero: 5
 titulo: Puente de Triana
-bloques: [estadistica]
+bloques: [estadistica, geometria]
 bloques_thales: []
 etiquetas: [estadistica-descriptiva, areas]
 dificultad: facil

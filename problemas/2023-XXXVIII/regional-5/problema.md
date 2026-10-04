@@ -4,7 +4,7 @@ edicion: 2023-XXXVIII
 fase: regional
 numero: 5
 titulo: El concurso
-bloques: [estadistica]
+bloques: [estadistica, numeros]
 bloques_thales: []
 etiquetas: [combinatoria, fracciones]
 dificultad: medio

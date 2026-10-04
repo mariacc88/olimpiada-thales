@@ -4,7 +4,7 @@ edicion: 1985-I
 fase: provincial
 numero: 5
 titulo: "¿Y los catetos?"
-bloques: [geometria]
+bloques: [geometria, numeros]
 bloques_thales: []
 etiquetas: [pitagoras, ecuaciones]
 dificultad: medio

@@ -4,7 +4,7 @@ edicion: 2016-XXXII
 fase: regional
 numero: 2
 titulo: Cubos de basura
-bloques: [numeros]
+bloques: [numeros, logica]
 bloques_thales: []
 etiquetas: [divisibilidad, patrones]
 dificultad: medio

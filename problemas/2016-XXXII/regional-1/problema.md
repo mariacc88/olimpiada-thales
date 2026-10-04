@@ -4,7 +4,7 @@ edicion: 2016-XXXII
 fase: regional
 numero: 1
 titulo: Discusión pitagórica
-bloques: [geometria]
+bloques: [geometria, estadistica]
 bloques_thales: []
 etiquetas: [combinatoria]
 dificultad: dificil

@@ -4,7 +4,7 @@ edicion: 2016-XXXII
 fase: regional
 numero: 5
 titulo: Números
-bloques: [numeros]
+bloques: [numeros, logica]
 bloques_thales: []
 etiquetas: [patrones]
 dificultad: dificil
