@@ -19,8 +19,8 @@ notas: ""
 
 Se tienen seis bolsas que contienen 18, 19, 21, 23, 25 y 34 canicas respectivamente. En cinco de estas bolsas todas las canicas son blancas, en la otra todas son rojas. Luis toma tres bolsas de las que contienen canicas blancas. Enrique toma las otras dos bolsas de canicas blancas.
 
-     Al contar las canicas que tiene cada uno, observan que Luis tiene el doble de canicas que Enrique.
+Al contar las canicas que tiene cada uno, observan que Luis tiene el doble de canicas que Enrique.
 
-     ¿Cuántas canicas rojas hay?
+¿Cuántas canicas rojas hay?
 
 (¡No olvides, es un ejercicio de razonamiento aritmético, no de artes adivinatorias!)

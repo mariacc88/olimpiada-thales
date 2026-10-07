@@ -19,4 +19,4 @@ notas: ""
 
 El lado de una finca cuadrada es 200 metros. Su dueño quiere dividirla en cinco parcelas. Cuatro de ellas de forma rectangular y de iguales dimensiones, y la quinta ha de ser un cuadrado cuya superficie sea la cuarta parte de la finca primitiva.
 
-    Dibuja un plano que sirva para hacer la partición de la finca....
+Dibuja un plano que sirva para hacer la partición de la finca.

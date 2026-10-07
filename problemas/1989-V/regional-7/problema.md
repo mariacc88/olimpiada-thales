@@ -25,18 +25,6 @@ Los mensajes son:
 - Caja verde: «El dinero no está en esta caja».
 - Caja azul: «El dinero no está en la caja roja».
 
-Los mensajes son:
-
-- Caja roja: «El dinero está en esta caja».
-- Caja verde: «El dinero no está en esta caja».
-- Caja azul: «El dinero no está en la caja roja».
-
-Los mensajes son:
-
-- Caja roja: «El dinero está en esta caja».
-- Caja verde: «El dinero no está en esta caja».
-- Caja azul: «El dinero no está en la caja roja».
-
 (Explica tu razonamiento)
 
 ![Las tres cajas, roja, verde y azul, con sus mensajes](fig1.png)

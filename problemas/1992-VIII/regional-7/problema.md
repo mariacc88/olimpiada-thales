@@ -19,11 +19,11 @@ notas: ""
 
 Vamos a jugar con Alberto, Bernardo, Carlos, Daniel y Enrique a un juego en el que cada uno de ellos será o rana o caimán.
 
-    Entre ellos se reparten los papeles de ranas y caimanes.
+Entre ellos se reparten los papeles de ranas y caimanes.
 
-    Nosotros debemos averiguar quién es rana y quién es caimán con la información que ellos mismos nos facilitan, teniendo en cuenta que las ranas siempre mienten y los caimanes siempre dirán la verdad.
+Nosotros debemos averiguar quién es rana y quién es caimán con la información que ellos mismos nos facilitan, teniendo en cuenta que las ranas siempre mienten y los caimanes siempre dirán la verdad.
 
-    Las informaciones que nos facilitan son las siguientes:
+Las informaciones que nos facilitan son las siguientes:
 
 *Alberto: «Bernardo es un caimán»
 
@@ -35,4 +35,4 @@ Bernardo: «Carlos no es caimán»
 
 Daniel: «Enrique y Alberto son animales diferentes»*
 
-    ¿Cuántas ranas hay? (Razona la respuesta)
+¿Cuántas ranas hay? (Razona la respuesta)

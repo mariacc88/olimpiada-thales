@@ -19,7 +19,7 @@ notas: ""
 
 En la operación siguiente todas las cifras están equivocadas, pero cada una representa a la misma cifra correcta:
 
-    $$82\,372 + 92\,372 + 81\,462 = 110\,591$$
+$$82\,372 + 92\,372 + 81\,462 = 110\,591$$
 
 ¿Cuál es la suma correcta?
 

@@ -13,8 +13,8 @@ Así se pueden leer directamente sobre las páginas de trabajo/…/paginas/, sea
 Opciones:
   --dpi N      resolución para fuentes PDF (por defecto 300)
   --diapositiva N   con fuentes de SlideShare, número de diapositiva
-  --sin-fondo  con fuentes PDF, sustituye por blanco las imágenes que ocupan más de media
-               página (los fondos de las diapositivas) y conserva figuras, dibujos y texto
+  --sin-fondo  con fuentes PDF, sustituye por blanco las imágenes que ocupan más del 30 %
+               de la página (fondos de diapositiva o marcas de agua) y conserva figuras, dibujos y texto
 """
 
 import argparse
@@ -47,7 +47,7 @@ def main():
     p.add_argument("--dpi", type=int, default=300)
     p.add_argument("--diapositiva", type=int)
     p.add_argument("--sin-fondo", action="store_true",
-                   help="PDF: sustituye por blanco las imágenes que ocupan más de media página (fondos)")
+                   help="PDF: sustituye por blanco las imágenes que ocupan más del 30 %% de la página (fondos)")
     a = p.parse_args()
     x0, y0, x1, y1 = a.caja
     destino = Path(a.destino)
@@ -73,7 +73,7 @@ def main():
             blanco.set_pixel(0, 0, (255, 255, 255))
             for info in pagina.get_image_info(xrefs=True):
                 caja = pymupdf.Rect(info["bbox"])
-                if info["xref"] and caja.get_area() > 0.5 * r.get_area():
+                if info["xref"] and caja.get_area() > 0.3 * r.get_area():
                     pagina.replace_image(info["xref"], pixmap=blanco)
         pagina.get_pixmap(dpi=a.dpi, clip=clip).save(destino)
     else:

@@ -19,6 +19,6 @@ notas: ""
 
 Pepe, Pedro y Paco van de excursión. A la hora de comer deciden juntar los refrescos, que se reparten a partes iguales. Pepe aporta 4 refrescos y Pedro 3.
 
-    «Yo no tengo refrescos», dice Paco, «así que pondré dinero; tomad 200 pesetas».
+«Yo no tengo refrescos», dice Paco, «así que pondré dinero; tomad 200 pesetas».
 
-    ¿Cómo deben repartirse Pepe y Pedro las 200 pesetas?
+¿Cómo deben repartirse Pepe y Pedro las 200 pesetas?

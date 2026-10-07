@@ -19,7 +19,7 @@ notas: "En la web los exponentes se perdieron («210000 ó 103000»); por el sen
 
 ![Ilustración: el rey Don Pepe I](ilustracion.png)
 
- Se cuenta que, agradecido por un valioso consejo que salvó al reino de Matelandia del asedio de los bárbaros, el rey Don Pepe I ofreció como recompensa a Paquito Cabezas, elegir entre dos montones, o más bien montañas, de $2^{10000}$ o $10^{3000}$ granos de trigo, respectivamente.
+Se cuenta que, agradecido por un valioso consejo que salvó al reino de Matelandia del asedio de los bárbaros, el rey Don Pepe I ofreció como recompensa a Paquito Cabezas, elegir entre dos montones, o más bien montañas, de $2^{10000}$ o $10^{3000}$ granos de trigo, respectivamente.
 
 ¿Cuál crees que fue la decisión del ingenioso Paquito?
 

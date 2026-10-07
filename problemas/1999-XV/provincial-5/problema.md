@@ -21,6 +21,6 @@ Observa los dos cuadrados siguientes y di qué relación hay entre sus áreas:
 
 ![Dos cuadrados en una trama de puntos, uno con lados horizontales y otro girado 45°](fig1.png)
 
- Basándote en lo anterior, dibuja una pajarita con la misma forma que la de la figura pero cuya superficie sea el doble de la misma.
+Basándote en lo anterior, dibuja una pajarita con la misma forma que la de la figura pero cuya superficie sea el doble de la misma.
 
 ![Pajarita dibujada en una trama de puntos](fig2.png)

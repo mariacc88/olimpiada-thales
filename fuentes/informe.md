@@ -56,6 +56,7 @@ Leyenda de la columna «Problemas localizados»: `P` = fase provincial, `R` = re
 - **2014-XXX, 2015-XXXI, 2022-XXXVII**: un único material por fase (presentación o PDF de soluciones) con todos los problemas.
 - **2021-XXXVI**: edición online: 5 problemas por fase (no faltan).
 - **2024-XXXIX**: de la fase regional solo hay una crónica; no se han publicado los enunciados.
+- **2025-XL**: el PDF del problema provincial 5 («Los dados») solo contiene la solución, sin enunciado.
 - **2026-XLI**: solo hay bases y sedes; los problemas aún no se han publicado.
 
 ## Errores de descarga (4)

@@ -66,6 +66,7 @@ def limpiar(md):
     md = md.replace(" ", " ")                             # espacios duros de la web antigua
     md = re.sub(r"(?<=\S) {2,}(?=\S)", " ", md)                 # espacios repetidos dentro del texto
     md = re.sub(r"^[ \t]+$", "", md, flags=re.M)               # líneas con solo espacios
+    md = re.sub(r"^[ \t]+(?=\S)", "", md, flags=re.M)          # sangrías (Markdown las tomaría por código)
     md = re.sub(r"\*{4,}", "", md)                             # negritas vacías
     md = re.sub(r"[ \t]+\n", "\n", md)
     md = re.sub(r"(!\[[^\]]*\]\([^)]+\))\n(?=\S)", r"\1\n\n", md)  # imagen pegada al párrafo siguiente

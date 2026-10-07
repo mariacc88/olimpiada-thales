@@ -55,6 +55,7 @@ OBSERVACIONES = {
     "2014-XXX, 2015-XXXI, 2022-XXXVII": "un único material por fase (presentación o PDF de soluciones) con todos los problemas.",
     "2021-XXXVI": "edición online: 5 problemas por fase (no faltan).",
     "2024-XXXIX": "de la fase regional solo hay una crónica; no se han publicado los enunciados.",
+    "2025-XL": "el PDF del problema provincial 5 («Los dados») solo contiene la solución, sin enunciado.",
     "2026-XLI": "solo hay bases y sedes; los problemas aún no se han publicado.",
 }
 
@@ -265,10 +266,12 @@ class Inventario:
         self.ruta = ruta
         self.filas = {}      # clave (url) -> fila
         self.ids_previos = {}
+        self.notas_previas = {}  # para no perder p. ej. «recuperado de archive.org» al usar la caché
         if ruta.exists():
             with open(ruta, encoding="utf-8", newline="") as f:
                 for fila in csv.DictReader(f):
                     self.ids_previos[fila["url"]] = fila["id"]
+                    self.notas_previas[fila["url"]] = fila["notas"]
         self.siguiente = 1 + max((int(i[1:]) for i in self.ids_previos.values()), default=0)
 
     def añadir(self, url, **campos):
@@ -461,7 +464,7 @@ class Rastreador:
         fila = self.inv.añadir(url, edicion=ed["id"], fase=fase, numero=numero, titulo=titulo, tipo=tipo,
                                contenido=contenido, origen=origen["id"], ruta_local=ruta.relative_to(RAIZ).as_posix())
         ok, err = descargar(url, ruta)
-        notas = ""
+        notas = self.inv.notas_previas.get(url, "") if ruta.exists() else ""
         if not ok and err == "HTTP 404":
             copia = copia_archivada(url)
             if copia:
