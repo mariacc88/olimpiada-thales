@@ -57,7 +57,13 @@ def limpiar(md):
     md = re.sub(r"\{[^{}]*(height|width|border)=[^{}]*\}", "", md)  # atributos de imagen
     md = re.sub(r"^\[\s*$", "", md, flags=re.M)                # envoltorios [ … ]{.image .preview}
     md = re.sub(r"^\s*\]\{[^}]*\}", "", md, flags=re.M)
-    md = re.sub(r"\[([^\]]*)\]\{\.underline\}", r"\1", md)     # subrayados
+    md = re.sub(r"```\{=html\}.*?```", "", md, flags=re.S)     # bloques <style> y similares de Word
+    md = re.sub(r"`[^`]*`\{=html\}", "", md, flags=re.S)
+    for _ in range(3):  # spans con estilos de Word, también anidados: [texto]{style=…} → texto
+        md = re.sub(r"\[([^\[\]]*)\]\{[^{}]*\}", r"\1", md)
+    md = re.sub(r"\]\{[^{}]*(style|lang)=[^{}]*\}", "", md)  # cierres huérfanos (el «[» quedó en otro párrafo)
+    md = re.sub(r"^\[(?=[^\]\n]*$)", "", md, flags=re.M)      # y sus aperturas huérfanas
+    md = re.sub(r"^\s*\*{1,3}\s*(\*{1,3}\s*)*$", "", md, flags=re.M)  # negritas sueltas en una línea
     md = re.sub(r"(\w)\^([^\^\s]+)\^", r"$\1^{\2}$", md)      # superíndices de pandoc (3^3^)
     md = md.replace('\\"', '"').replace("\\'", "'")
     md = re.sub(r"\\([()\[\]*_.$<>-])", r"\1", md)             # escapes innecesarios
