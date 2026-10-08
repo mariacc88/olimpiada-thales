@@ -15,6 +15,7 @@ Opciones:
   --diapositiva N   con fuentes de SlideShare, número de diapositiva
   --sin-fondo  con fuentes PDF, sustituye por blanco las imágenes que ocupan más del 30 %
                de la página (fondos de diapositiva o marcas de agua) y conserva figuras, dibujos y texto
+  --fondo-liso pasa a blanco el color más frecuente del recorte (p. ej. el verde de una nota)
 """
 
 import argparse
@@ -48,6 +49,8 @@ def main():
     p.add_argument("--diapositiva", type=int)
     p.add_argument("--sin-fondo", action="store_true",
                    help="PDF: sustituye por blanco las imágenes que ocupan más del 30 %% de la página (fondos)")
+    p.add_argument("--fondo-liso", action="store_true",
+                   help="pasa a blanco el color más frecuente del recorte (fondos lisos de color)")
     a = p.parse_args()
     x0, y0, x1, y1 = a.caja
     destino = Path(a.destino)
@@ -80,7 +83,19 @@ def main():
         img = Image.open(ruta).convert("RGB")
         w, h = img.size
         img.crop((round(x0 * w), round(y0 * h), round(x1 * w), round(y1 * h))).save(destino)
+    if a.fondo_liso:
+        blanquear_fondo(destino)
     print(f"{destino} ({Image.open(destino).size[0]}×{Image.open(destino).size[1]} px)")
+
+
+def blanquear_fondo(ruta, tolerancia=40):
+    """Pasa a blanco los píxeles parecidos al color más frecuente del recorte (un fondo liso)."""
+    img = Image.open(ruta).convert("RGB")
+    fondo = max(img.getcolors(img.width * img.height), key=lambda c: c[0])[1]
+    datos = [(255, 255, 255) if sum(abs(p - f) for p, f in zip(px, fondo)) < tolerancia else px
+             for px in (img.get_flattened_data() if hasattr(img, "get_flattened_data") else img.getdata())]
+    img.putdata(datos)
+    img.save(ruta)
 
 
 if __name__ == "__main__":

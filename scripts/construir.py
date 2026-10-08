@@ -41,7 +41,9 @@ def ancho_impresion_cm(ruta):
     if ruta.name.startswith("ilustracion"):
         # el lado mayor no pasa de ANCHO_ILUSTRACION_CM (las fotos verticales también quedan pequeñas)
         return min(round(px / 96 * 2.54, 1), round(ANCHO_ILUSTRACION_CM * min(1, px / alto), 1))
-    ppp = 300 if px >= 600 else 96
+    # Entre 200 y 800 px la resolución pasa gradualmente de 96 a 300 ppp, para que el tamaño
+    # crezca con los píxeles sin saltos (los recortes medianos de diapositivas no salen enormes)
+    ppp = 96 + (300 - 96) * min(1, max(0, (px - 200) / 600))
     return min(ANCHO_MAX_CM, round(px / ppp * 2.54, 1))
 
 

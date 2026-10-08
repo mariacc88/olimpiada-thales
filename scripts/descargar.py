@@ -235,17 +235,16 @@ def deducir_problema(texto_enlace, url, fase_ctx):
     if m:
         numero, titulo = m.group(1), m.group(2).strip(" .-–()").replace("( PowerPoint)", "").strip()
     nombre = urllib.parse.unquote(url.rsplit("/", 1)[-1]).lower()
-    letra_num = None
-    if m := re.match(r"\d+([pr])(\d+)\b", nombre) or re.search(r"_([pr])(\d+)[._]", nombre):
-        letra_num = m.groups()                    # 32p1.pps, XXXVI_P1_….pdf
+    # Nombres con edición, fase y número (32p1.pps, 251r.pps): la fase del nombre manda sobre el contexto
+    if m := re.match(r"\d+([pr])(\d+)\b", nombre):
+        fase, numero = ("provincial" if m.group(1) == "p" else "regional"), numero or m.group(2)
     elif m := re.match(r"\d{2}(\d)([pr])", nombre):
-        letra_num = m.group(2), m.group(1)        # 251r.pps, 191pr.zip: edición + número + fase
-    if letra_num:
-        fase = fase or ("provincial" if letra_num[0] == "p" else "regional")
-        numero = numero or letra_num[1]
-    if "prov" in nombre and not fase:
+        fase, numero = ("provincial" if m.group(2) == "p" else "regional"), numero or m.group(1)
+    elif m := re.search(r"_p(\d+)[._]", nombre):  # XXXVI_P1_….pdf: aquí la P es de «problema»
+        numero = numero or m.group(1)
+    if re.search(r"prov", nombre):
         fase = "provincial"
-    if "regional" in nombre and not fase:
+    elif re.search(r"reg", nombre):
         fase = "regional"
     return fase, numero, titulo or texto_enlace
 

@@ -248,7 +248,7 @@ Las etiquetas actuales son de muestra; las instrucciones para editarlas están a
 - `construir.py` genera, sin guardarlos en git:
   - `web/datos/problemas.json`: índice con metadatos, enunciado y solución en Markdown y rutas de las figuras.
   - `web/datos/fig/<id>/…`: las figuras.
-  - `web/datos/typst/<id>-enunciado.typ` y `<id>-solucion.typ`: cada parte convertida a Typst con pandoc. A cada figura se le da su tamaño natural en papel (300 ppp para los recortes, 96 ppp para las imágenes pequeñas de la web antigua; como máximo 15 cm).
+  - `web/datos/typst/<id>-enunciado.typ` y `<id>-solucion.typ`: cada parte convertida a Typst con pandoc. A cada figura se le da su tamaño natural en papel (96 ppp para las imágenes pequeñas, de hasta 200 px; 300 ppp a partir de 800 px, con una transición gradual entre ambas; como máximo 15 cm).
 - `validar.py` se ejecuta antes de construir: comprueba metadatos obligatorios, figuras que existen, etiquetas válidas e identificadores únicos.
 
 ### Fase 4. Explorador web (GitHub Pages)
